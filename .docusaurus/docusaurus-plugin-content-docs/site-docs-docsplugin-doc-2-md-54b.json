@@ -1,0 +1,8 @@
+{
+  "id": "docsplugin/doc2",
+  "title": "Document Number 2",
+  "description": "This is a link to [another document.](doc3.md) This is a link to an [external page.](http://www.example.com)",
+  "source": "@site/docs\\docsplugin\\doc2.md",
+  "permalink": "/docs/docsplugin/doc2",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/docsplugin/doc2.md"
+}

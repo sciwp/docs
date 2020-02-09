@@ -1,0 +1,9 @@
+{
+  "id": "docsplugin/doc1",
+  "title": "Style Guide",
+  "description": "You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).",
+  "source": "@site/docs\\docsplugin\\doc1.md",
+  "permalink": "/docs/docsplugin/doc1",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/docsplugin/doc1.md",
+  "sidebar_label": "Style Guide"
+}

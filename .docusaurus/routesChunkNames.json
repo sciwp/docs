@@ -1,0 +1,117 @@
+{
+  "/": {
+    "component": "component---site-src-pages-index-jsece-a18"
+  },
+  "/blog": {
+    "component": "component---theme-blog-list-pagea-6-a-7ba",
+    "items": [
+      {
+        "content": "content---blog-99-c-ea6"
+      },
+      {
+        "content": "content---blogc-0-a-22b"
+      },
+      {
+        "content": "content---blog-273-7f3"
+      }
+    ],
+    "metadata": "metadata---blogbbb-5f9"
+  },
+  "/blog/hello-world": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "content": "content---blog-hello-world-843-97f"
+  },
+  "/blog/hola": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "content": "content---blog-holaaed-b12"
+  },
+  "/blog/tags": {
+    "component": "component---theme-blog-tags-list-page-01-a-d0b",
+    "tags": "tags---blog-tags-8-be-13d"
+  },
+  "/blog/tags/docusaurus": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "items": [
+      {
+        "content": "content---blog-99-c-ea6"
+      },
+      {
+        "content": "content---blogc-0-a-22b"
+      },
+      {
+        "content": "content---blog-273-7f3"
+      }
+    ],
+    "metadata": "metadata---blog-tags-docusaurus-6-ca-f43"
+  },
+  "/blog/tags/facebook": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "items": [
+      {
+        "content": "content---blog-99-c-ea6"
+      }
+    ],
+    "metadata": "metadata---blog-tags-facebookeec-618"
+  },
+  "/blog/tags/hello": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "items": [
+      {
+        "content": "content---blog-99-c-ea6"
+      },
+      {
+        "content": "content---blogc-0-a-22b"
+      }
+    ],
+    "metadata": "metadata---blog-tags-hello-3-a-6-b36"
+  },
+  "/blog/tags/hola": {
+    "component": "component---theme-blog-tags-posts-page-687-b6c",
+    "items": [
+      {
+        "content": "content---blog-273-7f3"
+      }
+    ],
+    "metadata": "metadata---blog-tags-hola-31-d-e2f"
+  },
+  "/blog/welcome": {
+    "component": "component---theme-blog-post-pageccc-cab",
+    "content": "content---blog-welcomea-9-a-cb6"
+  },
+  "/docs/:route": {
+    "component": "component---theme-doc-page-1-be-9be",
+    "docsMetadata": "docsMetadata---docs-route-20-a-f24"
+  },
+  "/docs/doc1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-doc-1736-a06"
+  },
+  "/docs/doc2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-doc-2991-1ba"
+  },
+  "/docs/doc3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-doc-3225-2eb"
+  },
+  "/docs/mdx": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-mdx-45-a-26c"
+  },
+  "/docs/plugin/doc1": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-plugin-doc-18-e-8-a0f"
+  },
+  "/docs/plugin/doc2": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-plugin-doc-28-fa-37d"
+  },
+  "/docs/plugin/doc3": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-plugin-doc-3156-49f"
+  },
+  "/docs/plugin/mdx": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-plugin-mdx-615-343"
+  }
+}

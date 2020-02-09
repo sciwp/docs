@@ -1,29 +1,38 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'SciWP',
+  tagline: 'A MVC framework to create plugins for WordPress',
+  url: 'https://sciwp.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'SCIWP',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/doc1', label: 'Docs', position: 'left'},
+        {to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
+        {to: 'docs/doc1', label: 'Framework Documentation', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/sciwp/',
           label: 'GitHub',
           position: 'right',
         },
       ],
     },
     footer: {
+      /*
+      footer: {
+        logo: {
+          alt: 'Facebook Open Source Logo',
+          src: 'https://docusaurus.io/img/oss_logo.png',
+          href: 'https://opensource.facebook.com/',
+        },
+        */
       style: 'dark',
       links: [
         {
@@ -70,7 +79,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Built by Eduardo Lázaro Rodríguez `,
     },
   },
   presets: [

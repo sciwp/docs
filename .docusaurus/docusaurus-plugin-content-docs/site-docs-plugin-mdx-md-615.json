@@ -1,0 +1,8 @@
+{
+  "id": "plugin/mdx",
+  "title": "Powered by MDX",
+  "description": "You can write JSX and use React components within your Markdown thanks to [MDX](https://mdxjs.com/).",
+  "source": "@site/docs\\plugin\\mdx.md",
+  "permalink": "/docs/plugin/mdx",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/plugin/mdx.md"
+}
