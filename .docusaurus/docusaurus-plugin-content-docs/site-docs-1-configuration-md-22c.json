@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-configuration",
+  "title": "Configuration",
+  "description": "All the SCIWP Framework configuration options are located in the **_config.php_** file, in the root folder of your plugin.",
+  "source": "@site/docs\\1-configuration.md",
+  "permalink": "/docs/sciwp-configuration",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/1-configuration.md",
+  "sidebar_label": "Configuration",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Installation",
+    "permalink": "/docs/sciwp-install"
+  },
+  "next": {
+    "title": "Autoloader",
+    "permalink": "/docs/sciwp-autoloader"
+  }
+}

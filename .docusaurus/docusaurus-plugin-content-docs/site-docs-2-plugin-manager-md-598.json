@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-plugin-manager",
+  "title": "Plugin Manager",
+  "description": "The Plugin Manager is the component which is in charge of managing the plugins using SCIWP. All plugin instances should be registered with this class, which will link the plugins objects to other framework components, like the autoloader. You will not need to use this component at all, as the **\\Sci\\Plugin** class already includes all required functionality to interact with the Plugin Manager.\r",
+  "source": "@site/docs\\2-pluginManager.md",
+  "permalink": "/docs/sciwp-plugin-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/2-pluginManager.md",
+  "sidebar_label": "Plugin Manager",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Autoloader",
+    "permalink": "/docs/sciwp-autoloader"
+  },
+  "next": {
+    "title": "Powered by MDX",
+    "permalink": "/docs/mdx"
+  }
+}

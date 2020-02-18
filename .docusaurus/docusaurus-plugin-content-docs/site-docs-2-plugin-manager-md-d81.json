@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-plugin-manager",
+  "title": "Plugin Manager",
+  "description": "The Plugin Manager **_Sci\\Manager\\PluginManager_**, is the component used by the framework to manage the plugins. All plugin instances created should be registered within the PluginManager.\r",
+  "source": "@site/docs\\2-plugin-manager.md",
+  "permalink": "/docs/sciwp-plugin-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/2-plugin-manager.md",
+  "sidebar_label": "Plugin Manager",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Autoloader",
+    "permalink": "/docs/sciwp-autoloader"
+  },
+  "next": {
+    "title": "Route Manager",
+    "permalink": "/docs/sciwp-route-manager"
+  }
+}

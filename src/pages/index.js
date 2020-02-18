@@ -8,11 +8,22 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Extremely simple to install</>,
+    imageUrl: 'img/feature-install.png',
     description: (
       <>
-        SCIWP was designed te be easy to install and use. You can install the offical WordPress plugin or you can bundle the framework with your own plugins and distribute it in the way you prefer.
+        <p>SCIWP Framework was designed te be easy to install and use. You just need to copy the SCIWP package into your Plugin directory and use it by just typing two lines of code. The framework will read WordPress Plugin data and configure namespaces for you. </p>
+        <p>Do you want to customize something? Just add a config file in the root folder of your Plugin. Complex? Just use the SCIWP Starter Template.</p>
+      </>
+    ),
+  },
+  {
+    title: <>Easy to use ORM</>,
+    imageUrl: '/img/feature-models.png',
+    description: (
+      <>
+        <p>SCIWP integrates an easy to use ORM. You can map database tables to models by just creating a class. You can then customize table tames, default attributes, timestamps and more.</p>
+        <p>You can then create database queries against the models in order to get one or many records which will be mapped to create model instances with the retrieved attributes.</p>
       </>
     ),
   },
@@ -30,7 +41,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-       With SCIWP you can divide your code in modules and create a logical separation among models, controllers and views, including the bussiness logic withing services.
+        With SCIWP you can divide your code in modules and create a logical separation among models, controllers and views, including the bussiness logic withing services.
       </>
     ),
   },
@@ -72,26 +83,56 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function FeatureContent({ title, description }) {
+  return (
+    <div className={classnames(styles.featureContent)}>
+      <h3>{title}</h3>
+      {description}
+    </div>
+  );
+}
+
+function FeatureMedia({ title, imageUrl }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={classnames('col col--4', styles.feature)}>
-        <div className={classnames('feature')}>
-          {imgUrl && (
-            <div className="text--center">
-              <img className={styles.featureImage} src={imgUrl} alt={title} />
-            </div>
-          )}
-          <h3>{title}</h3>
-          <p>{description}</p>
-      </div>
+    <div className={classnames(styles.featureMedia)}>
+      {imgUrl && (
+        <div className="text--center">
+          <img className={styles.featureImage} src={imgUrl} alt={title} />
+        </div>
+      )}
+    </div>
+  );
+}
+
+function Feature({ imageUrl, title, description, featureEven }) {
+  if (featureEven ) {
+    return(
+      <div className={classnames('col col--12', styles.feature)}>
+      <FeatureMedia title={title} imageUrl={imageUrl} />
+      <FeatureContent
+        title={title}
+        description={description}
+      />
+    </div>
+    );
+  }
+  return(
+    <div className={classnames('col col--12', styles.feature)}>
+      <FeatureContent
+        title={title}
+         description={description}
+        featureEven={featureEven}
+      />
+      <FeatureMedia imageUrl={imageUrl} />
     </div>
   );
 }
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
+  let featureEven = true;
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
@@ -99,8 +140,10 @@ function Home() {
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
 
-        <img alt="Docusaurus with Keytar" className="heroLogo_cGK-" src="/img/hero-logo.png"/>
-          <p><h1 className="hero__subtitle">{siteConfig.tagline}</h1></p>
+          <img alt="Docusaurus with Keytar" className="heroLogo_cGK-" src="/img/hero-logo.png" />
+
+          <h1 className="hero__title">{siteConfig.title}</h1>
+          <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
               className={classnames(
@@ -118,24 +161,25 @@ function Home() {
           <section className={styles.features}>
             <div className="container">
               <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
+                {features.map((props, idx) => {
+                  featureEven = !featureEven;
+                  return <Feature key={idx} featureEven={featureEven} {...props} />
+                })}
               </div>
             </div>
           </section>
         )}
-      <section className="mvc">
+        <section className="mvc">
           <div className="container">
             <div className="row">
               <div className="col col--4">
-<h2>sd</h2>
+                <h2>sd</h2>
               </div>
               <div className="col col--4">
-              <h2>sd</h2>
+                <h2>sd</h2>
               </div>
               <div className="col col--4">
-              <h2>sd</h2>
+                <h2>sd</h2>
               </div>
             </div>
           </div>

@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-autoloader",
+  "title": "Autoloader",
+  "description": "The Autoloader is responsible for including the referenced classes. This component is used by both the plugins created with the framework and the framework itself, also allowing the use of **namespaces**, which should be a must when building plugins for any application.",
+  "source": "@site/docs\\2-autoloader.md",
+  "permalink": "/docs/sciwp-autoloader",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/2-autoloader.md",
+  "sidebar_label": "Autoloader",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/sciwp-configuration"
+  },
+  "next": {
+    "title": "Plugin Manager",
+    "permalink": "/docs/sciwp-plugin-manager"
+  }
+}

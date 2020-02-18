@@ -7,7 +7,10 @@
 
 module.exports = {
   someSidebar: {
-    Docusaurus: ['doc1', 'doc2', 'doc3'],
+    'Getting Started': ['sciwp-install', 'sciwp-configuration', 'sciwp-autoloader'],
+    'Components': ['sciwp-plugin-manager', 'sciwp-route-manager'],
+    'Extensions': [/*'sciwp-extensionsr'*/],
+    'Structures': [/*'sciwp-collections'*/],
     Features: ['mdx'],
   },
 };

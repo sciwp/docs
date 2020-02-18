@@ -1,0 +1,9 @@
+{
+  "id": "sciwp-collections",
+  "title": "Collections",
+  "description": "",
+  "source": "@site/docs\\3-collections.md",
+  "permalink": "/docs/sciwp-collections",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/3-collections.md",
+  "sidebar_label": "Collections"
+}

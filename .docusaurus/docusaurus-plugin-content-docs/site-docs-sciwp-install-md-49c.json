@@ -2,13 +2,13 @@
   "id": "sciwp-install",
   "title": "Installation",
   "description": "## Requirements",
-  "source": "@site/docs\\doc1.md",
+  "source": "@site/docs\\sciwp-install.md",
   "permalink": "/docs/sciwp-install",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/doc1.md",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/sciwp-install.md",
   "sidebar_label": "Installation",
   "sidebar": "someSidebar",
   "next": {
-    "title": "Configuration",
-    "permalink": "/docs/sciwp-configuration"
+    "title": "Document Number 2",
+    "permalink": "/docs/doc2"
   }
 }

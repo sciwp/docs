@@ -4,18 +4,18 @@ module.exports = {
   url: 'https://sciwp.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'sciwp', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'SCIWP',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'SCIWP Logo',
         src: 'img/logo.svg',
       },
       links: [
+        {to: 'docs/sciwp-install', label: 'Framework Documentation', position: 'left'},
         {to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
-        {to: 'docs/doc1', label: 'Framework Documentation', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/sciwp/',
@@ -79,7 +79,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Built by Eduardo Lázaro Rodríguez `,
+      copyright: `Built by Eduardo Lázaro Rodríguez with Docusaurus`,
     },
   },
   presets: [

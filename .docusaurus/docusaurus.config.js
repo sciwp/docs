@@ -6,18 +6,18 @@ export default {
     "navbar": {
       "title": "SCIWP",
       "logo": {
-        "alt": "My Site Logo",
+        "alt": "SCIWP Logo",
         "src": "img/logo.svg"
       },
       "links": [
         {
-          "to": "docs/plugin/doc1",
-          "label": "Plugin Documentation",
+          "to": "docs/sciwp-install",
+          "label": "Framework Documentation",
           "position": "left"
         },
         {
-          "to": "docs/doc1",
-          "label": "Framework Documentation",
+          "to": "docs/plugin/doc1",
+          "label": "Plugin Documentation",
           "position": "left"
         },
         {
@@ -79,7 +79,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Built by Eduardo Lázaro Rodríguez "
+      "copyright": "Built by Eduardo Lázaro Rodríguez with Docusaurus"
     }
   },
   "title": "SciWP",
@@ -87,7 +87,7 @@ export default {
   "url": "https://sciwp.com",
   "baseUrl": "/",
   "favicon": "img/favicon.ico",
-  "organizationName": "facebook",
+  "organizationName": "sciwp",
   "projectName": "docusaurus",
   "presets": [
     [

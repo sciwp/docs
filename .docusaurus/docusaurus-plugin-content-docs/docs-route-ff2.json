@@ -3,24 +3,50 @@
     "someSidebar": [
       {
         "type": "category",
-        "label": "Docusaurus",
+        "label": "Getting Started",
         "items": [
           {
             "type": "link",
-            "label": "Style Guide",
-            "href": "/docs/doc1"
+            "label": "Installation",
+            "href": "/docs/sciwp-install"
           },
           {
             "type": "link",
-            "label": "Document Number 2",
-            "href": "/docs/doc2"
+            "label": "Configuration",
+            "href": "/docs/sciwp-configuration"
           },
           {
             "type": "link",
-            "label": "This is Document Number 3",
-            "href": "/docs/doc3"
+            "label": "Autoloader",
+            "href": "/docs/sciwp-autoloader"
           }
         ]
+      },
+      {
+        "type": "category",
+        "label": "Components",
+        "items": [
+          {
+            "type": "link",
+            "label": "Plugin Manager",
+            "href": "/docs/sciwp-plugin-manager"
+          },
+          {
+            "type": "link",
+            "label": "Route Manager",
+            "href": "/docs/sciwp-route-manager"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Extensions",
+        "items": []
+      },
+      {
+        "type": "category",
+        "label": "Structures",
+        "items": []
       },
       {
         "type": "category",
@@ -36,9 +62,11 @@
     ]
   },
   "permalinkToSidebar": {
-    "/docs/doc1": "someSidebar",
-    "/docs/doc2": "someSidebar",
-    "/docs/doc3": "someSidebar",
-    "/docs/mdx": "someSidebar"
+    "/docs/mdx": "someSidebar",
+    "/docs/sciwp-autoloader": "someSidebar",
+    "/docs/sciwp-configuration": "someSidebar",
+    "/docs/sciwp-install": "someSidebar",
+    "/docs/sciwp-plugin-manager": "someSidebar",
+    "/docs/sciwp-route-manager": "someSidebar"
   }
 }

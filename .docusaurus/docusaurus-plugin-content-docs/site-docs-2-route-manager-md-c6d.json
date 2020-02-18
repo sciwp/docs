@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-route-manager",
+  "title": "Route Manager",
+  "description": "With Sciwp you can define routes in the same way you would define them with any other framework. The routes usually match a file, a function or a controller's class method, which is in charge of parsing the incoming data and provide a response.\r",
+  "source": "@site/docs\\2-route-manager.md",
+  "permalink": "/docs/sciwp-route-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/2-route-manager.md",
+  "sidebar_label": "Route Manager",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Plugin Manager",
+    "permalink": "/docs/sciwp-plugin-manager"
+  },
+  "next": {
+    "title": "Powered by MDX",
+    "permalink": "/docs/mdx"
+  }
+}

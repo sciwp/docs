@@ -29,7 +29,52 @@
   width: 100%;
 }
 
+.feature {
+  margin-bottom:60px;
+  margin-top:60px;
+}
+
+.featureContent {
+  width: 40%;
+  float:left;
+  color: #3c4858;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.featureContent h3 {
+  font-size: 28px;
+  font-weight: 600;
+  font-family: 'Sriracha', cursive;
+}
+
+
+.feature:nth-child(odd) .featureContent {
+  margin-right:5%;  
+}
+  
+.feature:nth-child(even) .featureContent {
+  margin-left:5%
+}
+
+.featureMedia {
+  width: 55%;
+  float:left;
+}
+
 .featureImage {
-  height: 200px;
-  width: 200px;
+  width: 100%;
+  border-radius: 13px!important;
+  box-shadow: 16px 16px 16px rgba(0,0,0,.16);
+}
+
+.feature:nth-child(odd) .featureImage {
+  transform: rotate(2deg);
+  
+}
+
+.feature:nth-child(even) .featureImage {
+  transform: rotate(-2deg);
 }

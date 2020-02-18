@@ -1,0 +1,8 @@
+{
+  "id": "plugin/2-x",
+  "title": "2-x",
+  "description": "",
+  "source": "@site/docs\\plugin\\2-x.md",
+  "permalink": "/docs/plugin/2-x",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/plugin/2-x.md"
+}

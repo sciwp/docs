@@ -70,20 +70,8 @@ export default [
   
   routes: [
 {
-  path: '/docs/doc1',
-  component: ComponentCreator('/docs/doc1'),
-  exact: true,
-  
-},
-{
-  path: '/docs/doc2',
-  component: ComponentCreator('/docs/doc2'),
-  exact: true,
-  
-},
-{
-  path: '/docs/doc3',
-  component: ComponentCreator('/docs/doc3'),
+  path: '/docs/2-x',
+  component: ComponentCreator('/docs/2-x'),
   exact: true,
   
 },
@@ -114,6 +102,48 @@ export default [
 {
   path: '/docs/plugin/mdx',
   component: ComponentCreator('/docs/plugin/mdx'),
+  exact: true,
+  
+},
+{
+  path: '/docs/sciwp-autoloader',
+  component: ComponentCreator('/docs/sciwp-autoloader'),
+  exact: true,
+  
+},
+{
+  path: '/docs/sciwp-collections',
+  component: ComponentCreator('/docs/sciwp-collections'),
+  exact: true,
+  
+},
+{
+  path: '/docs/sciwp-configuration',
+  component: ComponentCreator('/docs/sciwp-configuration'),
+  exact: true,
+  
+},
+{
+  path: '/docs/sciwp-dependency-injection',
+  component: ComponentCreator('/docs/sciwp-dependency-injection'),
+  exact: true,
+  
+},
+{
+  path: '/docs/sciwp-install',
+  component: ComponentCreator('/docs/sciwp-install'),
+  exact: true,
+  
+},
+{
+  path: '/docs/sciwp-plugin-manager',
+  component: ComponentCreator('/docs/sciwp-plugin-manager'),
+  exact: true,
+  
+},
+{
+  path: '/docs/sciwp-route-manager',
+  component: ComponentCreator('/docs/sciwp-route-manager'),
   exact: true,
   
 }],

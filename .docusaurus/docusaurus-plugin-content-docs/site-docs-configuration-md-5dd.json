@@ -2,9 +2,9 @@
   "id": "sciwp-configuration",
   "title": "Configuration",
   "description": "This is a link to [another document.](doc3.md) This is a link to an [external page.](http://www.example.com)",
-  "source": "@site/docs\\doc2.md",
+  "source": "@site/docs\\configuration.md",
   "permalink": "/docs/sciwp-configuration",
-  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/doc2.md",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/configuration.md",
   "sidebar_label": "Configuration",
   "sidebar": "someSidebar",
   "previous": {

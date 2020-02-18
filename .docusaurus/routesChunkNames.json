@@ -82,17 +82,9 @@
     "component": "component---theme-doc-page-1-be-9be",
     "docsMetadata": "docsMetadata---docs-route-20-a-f24"
   },
-  "/docs/doc1": {
+  "/docs/2-x": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-doc-1736-a06"
-  },
-  "/docs/doc2": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-doc-2991-1ba"
-  },
-  "/docs/doc3": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-doc-3225-2eb"
+    "content": "content---docs-2-x-94-b-4a1"
   },
   "/docs/mdx": {
     "component": "component---theme-doc-item-178-a40",
@@ -113,5 +105,33 @@
   "/docs/plugin/mdx": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-plugin-mdx-615-343"
+  },
+  "/docs/sciwp-autoloader": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-autoloader-253-483"
+  },
+  "/docs/sciwp-collections": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-collections-036-9f4"
+  },
+  "/docs/sciwp-configuration": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-configuration-22-c-e88"
+  },
+  "/docs/sciwp-dependency-injection": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-dependency-injection-7-f-6-ccf"
+  },
+  "/docs/sciwp-install": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-install-1-d-7-23c"
+  },
+  "/docs/sciwp-plugin-manager": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-plugin-managerd-81-986"
+  },
+  "/docs/sciwp-route-manager": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-route-managerc-6-d-9d5"
   }
 }
