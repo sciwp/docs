@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-dependency-injection",
+  "title": "Dependencies",
+  "description": "",
+  "source": "@site/docs\\dependency-injection.md",
+  "permalink": "/docs/sciwp-dependency-injection",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/dependency-injection.md",
+  "sidebar_label": "Dependencies",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Container",
+    "permalink": "/docs/sciwp-container"
+  },
+  "next": {
+    "title": "Plugins",
+    "permalink": "/docs/sciwp-plugin-manager"
+  }
+}

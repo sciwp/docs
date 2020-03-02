@@ -7,10 +7,12 @@
 
 module.exports = {
   someSidebar: {
-    'Getting Started': ['sciwp-install', 'sciwp-configuration', 'sciwp-autoloader'],
-    'Components': ['sciwp-plugin-manager', 'sciwp-route-manager'],
-    'Extensions': [/*'sciwp-extensionsr'*/],
-    'Structures': [/*'sciwp-collections'*/],
+    'Introduction': ['framework-prologue', 'framework-contribution'],
+    'Getting Started': ['framework-install', 'framework-configuration'],
+    'Architecture': ['framework-basics', 'framework-autoloader', 'framework-dependencies'],
+    'Components': ['framework-plugin-manager', 'framework-route-manager', 'framework-rest-manager', 'framework-provider-manager'],
+    'Extensions': [/*'framework-extensionsr'*/],
+    'Structures': [/*'framework-collections'*/],
     Features: ['mdx'],
   },
 };

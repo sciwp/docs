@@ -1,13 +1,14 @@
 ---
-id: sciwp-install
+id: framework-install
 title: Installation
 sidebar_label: Installation
 ---
 
+In this section you will find how to install the framework and get started with it. It might look long because there are some considerations to explain, but in most cases it's just matter of writing **three lines of code**.
+
 ## Requirements
 
-SCIWP Framework makes use of many WordPress components, so the base requirements are usually the same as the latest major WordPress version.
-However, before installing the framework, you will need to make sure that your server meets the following requirements:
+SCIWP Framework makes use of many WordPress components, so the base requirements for the latest SCIWP version are usually the same as the latest major WordPress version. However you will need to make sure that your server meets the following requirements before installing the framework:
 
 * PHP >= 7.2
 
@@ -34,10 +35,10 @@ After installing the framework, you still need to configure the Plugin to use it
 
 If you are creating a new plugin, you can just use the SCIWP Boilerplate template. To use the template, download the latest release from [this GitHub repo](https://github.com/sciwp/sciwp-boilerplate/releases) and then extract the downloaded file contents into the ```\wp-content\plugins\myplugin``` directory, as per our example.
 
-If you are not using the boilerplate, just edit the main file of your plugin, where you define the WordPress plugin name and the plugin description. This file is usually located in the root folter of your plugin. Then you just need add the next the next two lines of code to this file:
+If you are not using the boilerplate, just edit the main file of your plugin, where you define the WordPress plugin name and the plugin description. This file is usually located in the root folter of your plugin. Then you just need add the next two lines of code to this file:
 
 ```php
-# Define namespace
+# Define the namespace
 namespace MyPlugin;
 
 # Start the framework assuming the plugin file is 
@@ -47,8 +48,12 @@ include plugin_dir_path(__FILE__).'sciwp/run.php';
 # Create a new Plugin and regsiter it into the Plugin Manager
 Sci\Plugin::create(__FILE__)->register();
 ```
-As you can see, we first define the namespace ```\MyPlugin\``` for the file. The namespace specified in this file will be the namespace for the Plugin. However, it's possible to use a different one by just defining a namespace in the main file of the plugin. If you don't specify a namespace at the top of the file, just remember to include the fill class name for the Plugin class, including the base namespace.
+As you can see, we first define the namespace ```\MyPlugin\``` for the file. The namespace specified in this file will be the base namespace for the Plugin. However, it's possible to use a different one by just defining a namespace in the main file of the plugin. If you don't specify a namespace at the top of the file, just remember to include the full class name for the Plugin class, including the base namespace, when creating the plugin.
 
+```php
+# Specify the full namespace
+MyPlugin\Sci\Plugin::create(__FILE__)->register();
+```
 
 That's all you need to start. To **activate the plugin**, just access the WordPress administration panel and activate it as usually. However, there are some considerations described in the [Server Configuration](#server-configuration) section below you might need to take before activating your Plugin.
 
@@ -62,9 +67,9 @@ In general, you will not need to make the changes explained in this section. How
 
 After installing the framework, you may need to configure some permissions so it is able to replace the included default namespace for the one matching your plugin's configuration. At least, directories within the ```..\myplugin\sciwp``` folder should be writable by your web server, as otherwise the framework might experience problems.
 
-The default base namespace for the downloaded SCIWP Framework files is ```MyPlugin\```. If you get write permission errors when activating your plugin, you will need to open the framework directory ```..\myplugin\sciwp``` with an editor like _Notepad++_ or _VSCode_ and find and replace all occurrences of the string ```MyPlugin\``` with the base namespace you want to setup.
+The default base namespace for the downloaded SCIWP Framework files is ```MyPlugin\```. If you get write permission errors when activating your plugin, you will need to open the framework directory ```..\myplugin\sciwp``` with an editor like [Notepad++] (https://notepad-plus-plus.org/downloads/), [VS Code] (https://code.visualstudio.com/) or [Sublime] (https://www.sublimetext.com/) and find and replace all occurrences of the string ```MyPlugin\``` with the base namespace you want to setup.
 
-If the ```rebuild_code``` option in the **_config.php_** file is enabled and you get write permission errors , you will need to grant permissions to all the files inside your plugin or manually replace the base namespace in all the files to match the one you want.
+SCIWP can also replace the namespaces in your code if the ```rebuild_code``` option in the **_config.php_** file is enabled. If the option is enabled and you get write permission errors , you will need to grant permissions to all the files inside your plugin or manually replace the base namespace in all the files to match the one you want.
 
 ### Pretty Permalinks
 
@@ -72,7 +77,7 @@ Your web server must accept **pretty permalinks** so you can create new **routes
 
 #### Apache
 
-Before any configuration, make sure that the **_mod_rewrite_** module of **Apache** is enabled. Once enabled, you can switch on pretty permalinks in WordPress by acessing the **Permalinks** option in the administration panel. If the routes are not still working, try to add the next configuration to the **_.htaccess_** file located in the root directory of your WordPress installation as an alternative:
+Before any configuration, make sure that the **_mod_rewrite_** module is enabled in **Apache**. Once enabled, you can switch on pretty permalinks in WordPress by acessing the **Permalinks** option in the WordPress administration panel. If the routes are not still working, try to add the next configuration to the **_.htaccess_** file located in the root directory of your WordPress installation as an alternative:
 
 ```
 <IfModule mod_rewrite.c>
@@ -95,11 +100,11 @@ location / {
 }
 ```
 
-Once applied this configuration, both WordPress and SCIWP will be able to process new routes and permalinks structures.
+Once applied this configuration, both WordPress and SCIWP will be able to process new routes and permalink structures.
 
 ## Extending your Plugin
 
-If you want to create another plugin as an extension of the plugin you have just created (MyPlugin, as per our example), you don't need to follow this process again. It's enough to add this line of code in the main file of the new plugin:
+If you want to create another plugin as an extension of the plugin you have just created (MyPlugin, as per our example), you don't need to follow this process again. It's enough to add this line of code in the main file of the new plugin, where **_MyPlugin_** is the namespace of your main plugin:
 
 ```php
 # Define namespace
@@ -111,4 +116,4 @@ namespace MyChildPlugin;
 
 You can use SCIWP with all plugins you want. Just remember to configure these new plugins so they require the plugin which includes SCIWP.
 
-It's also important to note that two plugin cannot use the same namespace.
+It's also important to note that two plugin cannot use the same base namespace.

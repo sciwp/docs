@@ -1,0 +1,18 @@
+{
+  "id": "framework-rest-manager",
+  "title": "Rest Routes",
+  "description": "With SCIWP you can define REST API routes in the same way you would define standard routes. REST routes usually match a file, a function or a controller's class method, which is in charge of parsing the incoming data and provide a response.\r",
+  "source": "@site/docs\\rest-manager.md",
+  "permalink": "/docs/framework-rest-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/rest-manager.md",
+  "sidebar_label": "Rest Routes",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Routes",
+    "permalink": "/docs/framework-route-manager"
+  },
+  "next": {
+    "title": "Providers",
+    "permalink": "/docs/framework-provider-manager"
+  }
+}

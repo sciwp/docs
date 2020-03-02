@@ -1,5 +1,5 @@
 ---
-id: sciwp-autoloader
+id: framework-autoloader
 title: Autoloader
 sidebar_label: Autoloader
 ---

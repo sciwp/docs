@@ -1,7 +1,7 @@
 ---
-id: sciwp-plugin-manager
-title: Plugin Manager
-sidebar_label: Plugin Manager
+id: framework-plugin-manager
+title: Plugins
+sidebar_label: Plugins
 ---
 
 The Plugin Manager **_Sci\Manager\PluginManager_**, is the component used by the framework to manage the plugins. All plugin instances created should be registered within the PluginManager.

@@ -1,5 +1,5 @@
 ---
-id: sciwp-configuration
+id: framework-configuration
 title: Configuration
 sidebar_label: Configuration
 ---

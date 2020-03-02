@@ -11,7 +11,7 @@ export default {
       },
       "links": [
         {
-          "to": "docs/sciwp-install",
+          "to": "docs/framework-install",
           "label": "Framework Documentation",
           "position": "left"
         },

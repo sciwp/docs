@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-core",
+  "title": "Container",
+  "description": "",
+  "source": "@site/docs\\sciwp-core.md",
+  "permalink": "/docs/sciwp-core",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/sciwp-core.md",
+  "sidebar_label": "Container",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/sciwp-configuration"
+  },
+  "next": {
+    "title": "Autoloader",
+    "permalink": "/docs/sciwp-autoloader"
+  }
+}

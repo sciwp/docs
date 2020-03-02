@@ -76,6 +76,72 @@ export default [
   
 },
 {
+  path: '/docs/framework-autoloader',
+  component: ComponentCreator('/docs/framework-autoloader'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-basics',
+  component: ComponentCreator('/docs/framework-basics'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-configuration',
+  component: ComponentCreator('/docs/framework-configuration'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-contribution',
+  component: ComponentCreator('/docs/framework-contribution'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-dependencies',
+  component: ComponentCreator('/docs/framework-dependencies'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-install',
+  component: ComponentCreator('/docs/framework-install'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-plugin-manager',
+  component: ComponentCreator('/docs/framework-plugin-manager'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-prologue',
+  component: ComponentCreator('/docs/framework-prologue'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-provider-manager',
+  component: ComponentCreator('/docs/framework-provider-manager'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-rest-manager',
+  component: ComponentCreator('/docs/framework-rest-manager'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-route-manager',
+  component: ComponentCreator('/docs/framework-route-manager'),
+  exact: true,
+  
+},
+{
   path: '/docs/mdx',
   component: ComponentCreator('/docs/mdx'),
   exact: true,
@@ -106,44 +172,14 @@ export default [
   
 },
 {
-  path: '/docs/sciwp-autoloader',
-  component: ComponentCreator('/docs/sciwp-autoloader'),
-  exact: true,
-  
-},
-{
   path: '/docs/sciwp-collections',
   component: ComponentCreator('/docs/sciwp-collections'),
   exact: true,
   
 },
 {
-  path: '/docs/sciwp-configuration',
-  component: ComponentCreator('/docs/sciwp-configuration'),
-  exact: true,
-  
-},
-{
   path: '/docs/sciwp-dependency-injection',
   component: ComponentCreator('/docs/sciwp-dependency-injection'),
-  exact: true,
-  
-},
-{
-  path: '/docs/sciwp-install',
-  component: ComponentCreator('/docs/sciwp-install'),
-  exact: true,
-  
-},
-{
-  path: '/docs/sciwp-plugin-manager',
-  component: ComponentCreator('/docs/sciwp-plugin-manager'),
-  exact: true,
-  
-},
-{
-  path: '/docs/sciwp-route-manager',
-  component: ComponentCreator('/docs/sciwp-route-manager'),
   exact: true,
   
 }],

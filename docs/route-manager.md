@@ -1,12 +1,12 @@
 ---
-id: sciwp-route-manager
-title: Route Manager
-sidebar_label: Route Manager
+id: framework-route-manager
+title: Routes
+sidebar_label: Routes
 ---
 
 With Sciwp you can define routes in the same way you would define them with any other framework. The routes usually match a file, a function or a controller's class method, which is in charge of parsing the incoming data and provide a response.
 
-Routes can can answer to one or many REST methods. You can aslo create an API with different endpoints or just return a standard HTTP response, both synchronous or asynchronous.
+Routes can answer to one or many REST methods, returning just a standard HTTP response, wether synchronous or asynchronous.
 
 The **_Sci\Route_** class stores all data needed for a route definition, including the route expression, the parameters and matching action that will be executed with the defined parameters when the browser route matches the specified route.
 
@@ -56,7 +56,7 @@ Route::create('delete', '/news/{permalink}', function($permalink) {
 ```
 ### Route expression
 
-When creating a route using the **_create_** static method pf the Route class, you must specify the matching route using the second parameter. You can specify static routes or add different parameters. 
+When creating a route using the **_create_** static method of the Route class, you must specify the matching route using the second parameter. You can specify static routes or add different parameters. 
 
 #### Creating a Static Route
 
@@ -72,7 +72,7 @@ Route::create('get', '/news', function() { /*... */ });
 
 #### Creating a Dynamic Route
 
-You can specify dynamic parameters or variables between braces. The next  example will answer to the get requests **_/cars/seat_**, **_/cars/ford_** and **_/cars/any-model_**.
+You can specify dynamic parameters or variables between braces. The next example will answer to the get requests **_/cars/seat_**, **_/cars/ford_** and **_/cars/any-model_**.
 
 ```php
 namespace MyPlugin;
@@ -175,8 +175,9 @@ Although is not common when using spare functions, it's also possible to **injec
 namespace MyPlugin;
 
 use MyPlugin\Sci\Route;
+use MyPlugin\App\Services\Link;
 
-Route::create('get', '/news/{permalink}', function($permalink, \WP_REST_Request $request) {
+Route::create('get', '/news/{permalink}', function($permalink, Link $link)) {
   echo('News Permalink: ' . $permalink);
 });
 ```
@@ -200,7 +201,7 @@ You can inject dependencies into the controller constructor. This is can example
 ```php
 namespace  MyPlugin\App\Controllers;
 
-use MyPlugin\App\Services\Cars
+use MyPlugin\App\Services\Cars;
 
 class Cars
 {
@@ -232,10 +233,10 @@ namespace MyPlugin;
 
 use MyPlugin\Sci\Route;
 
-Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars@showCarStaticMethod');
+Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars::showCarStatic');
 ```
 
-Please note that the actions defined with the _class::method_ actions just work when referencing a static method.
+Please note that the actions defined with the form _class::method_ just work when referencing a static method. No class instance will be created.
 
 #### Using a File as an Action
 
@@ -252,83 +253,18 @@ $myPlugin = PluginManager::instance()->get('myplugin');
 Route::create('get', '/cars/{make}/{model}', $myPlugin->getDir() . '/app/files/actionFile.php');
 ```
 
-### Where Clauses
+## Request Methods
 
-When creating a route it's also possible to specify parameter restrictions usin a where clause.
-
-#### Single Where Clause
-
-which includes the next parameters:
-
-* **parameterName (string)**: The parameter that you want to apply the restriction.
-* **regularExpression (mixed)**: The regular expression.
-
-In the next exmaple we restrict the **_make_** parameter tu include just characters in the range _a-z_ and we also limit the parameter length to have from _1_ to _10_ characters:
-
+The Route class includes short methods for the available HTTP request methods so you don't need to use this parameter, writing less code. You can match all available request methods using the **_any_** method of the **_Sci\Route_** class. Here is an example:
 
 ```php
 namespace MyPlugin;
 
 use MyPlugin\Sci\Route;
 
-Route::create('get', '/cars/{make}', 'MyPlugin\App\Controller\Cars@view')->where('make', '[a-z]{1,10}');
+Route::any('/cars', 'MyPlugin\App\Controllers\Cars@getCar');
 ```
-
-#### Multiple Where Clauses
-
-It's also possible to concatenate many where clauses:
-
-```php
-namespace MyPlugin;
-
-use MyPlugin\Sci\Route;
-
-Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars@view')->where('make', '[a-z]{10}')->where('model', '[a-z0-9]{1,10}');
-```
-Or you can also write it in this way to avoid long lines of code:
-
-```php
-namespace MyPlugin;
-
-use MyPlugin\Sci\Route;
-
-$myRoute = Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars@view');
-$myRoute->where('make', '[a-z]{10}');
-$myRoute->where('model', '[a-z0-9]{1,10}');
-```
-
-The **_where_** method also accepts an array of where clauses formatted as **_'parameter' => $expression_**, so the previous code could be rewritten in this way:
-
-```php
-namespace MyPlugin;
-
-use MyPlugin\Sci\Route;
-
-$myRoute = Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars@view');
-$myRoute->where(['make' => '[a-z]{10}', 'model' => '[a-z0-9]{1,10}']);
-```
-
-## Registering Routes
-
-It's not enough to create routes. Before you are able to access them, route instances must be registered into the Plugin Manager. The **\Sci\Route** class already includes the hability to interact with the Route Manager, so to register a route you just need to call the **_register_** method. The **_register_** method accepts the following parameters:
-
-* **routeId (string)**: This is an optional parameter which will allow to easily retrieve routes from the Route Manager. It's useful when you want other plugin creators to extend your plugin.
-
-Here is how you would create and register a route:
-
-```php
-namespace MyPlugin;
-
-use MyPlugin\Sci\Route;
-
-# Create a new route and register the instance
-Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controllers\Car@showCar')->register('car_model');
-```
-**Explanation**: The **_create_** static method returns a **_Route_** instance, so it's possible to use the **_register_** method with the output.
-
-## Shortcut Methods
-
-The Route class includes short methods for the available HTTP request methods so you don't need to use this parameter, writing less code.
+The _getCar_ method of the _Cars_ class will be called regardless of the request method. it's also possible to specify a specific method using one of the specific methods.
 
 ###  Get Method
 
@@ -403,152 +339,151 @@ Route::get('/cars', 'MyPlugin\App\Controllers\Cars@getOptions');
 ```
 
 
+## Where Restrictions
+
+When creating a route it's possible to specify parameter restrictions usin a where clause.
+
+### Single Clause
+
+which includes the next parameters:
+
+* **parameterName (string)**: The parameter that you want to apply the restriction.
+* **regularExpression (mixed)**: The regular expression.
+
+In the next example we restrict the **_make_** parameter to include just characters in the range _a-z_ and we also limit the parameter length to have from _1_ to _10_ characters:
 
 
+```php
+namespace MyPlugin;
 
+use MyPlugin\Sci\Route;
 
+Route::create('get', '/cars/{make}', 'MyPlugin\App\Controller\Cars@view')->where('make', '[a-z]{1,10}');
+```
 
+### Multiple Clauses
 
+It's also possible to concatenate many where clauses as long as they make reference to different parameters:
 
+```php
+namespace MyPlugin;
 
+use MyPlugin\Sci\Route;
 
+Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars@view')->where('make', '[a-z]{10}')->where('model', '[a-z0-9]{1,10}');
+```
+Or you can also write it in this way to avoid long lines of code:
 
+```php
+namespace MyPlugin;
 
+use MyPlugin\Sci\Route;
 
+$myRoute = Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars@view');
+$myRoute->where('make', '[a-z]{10}');
+$myRoute->where('model', '[a-z0-9]{1,10}');
+```
 
+The **_where_** method also accepts an array of where clauses formatted as **_'parameter' => $expression_**, so the previous code could be rewritten in this way:
 
+```php
+namespace MyPlugin;
 
+use MyPlugin\Sci\Route;
 
+$myRoute = Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controller\Cars@view');
+$myRoute->where(['make' => '[a-z]{10}', 'model' => '[a-z0-9]{1,10}']);
+```
 
+## Registering Routes
+
+It's not enough to create routes. Before you are able to access them, route instances must be registered into the Route Manager. The **\Sci\Route** class already includes the hability to interact with the Route Manager, so to register a route you just need to call the **_register_** method. The **_register_** method accepts the following parameters:
+
+* **routeId (string)**: This is an optional parameter which will allow to easily retrieve routes from the Route Manager. It's useful when you want other plugin creators to extend your plugin.
+
+Here is how you would create and register a route:
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Route;
+
+# Create a new route and register the instance
+Route::create('get', '/cars/{make}/{model}', 'MyPlugin\App\Controllers\Car@showCar')->register('car_model');
+```
+**Explanation**: The **_create_** static method returns a **_Route_** instance, so it's possible to use the **_register_** method with the output.
+
+## Route Configuration
+
+### Layout Options
+
+Routes can be configured so the WordPress header and footer is included or excluded. The header and the footer are included by default. To configure the layout you can use the **_layout_** method of the **_Route_** class. The layout method accepts the following parameter:
+
+* **value (boolean)**: Set it to true to include both the header and the footer.
+
+The next route will include both the WordPress header and the footer:
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Route;
+
+$myRoute = Route::create('get', '/blog/{permalink}', 'MyPlugin\App\Controller\Blog@view');
+$myRoute->layout(true)->register();
 
 ```
-use Wormvc\Wormvc\Manager\RouteManager;
+
+Use the **_layout_** method with a **_false_** value to exclude both the WordPress header and footer:
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Route;
+
+$myRoute = Route::create('get', '/blog/{permalink}', 'MyPlugin\App\Controller\Blog@view');
+$myRoute->layout(false)->register();
+
+```
+
+### Sync/Async Routes
+
+Routes are configured by default as synchronous, so they just answer to synchronous requests. You can configure this behaviour by using the **_async_** method of the **_Route_** class. The async method accepts the following parameter:
+
+* **value (boolean)**: Set it to true for the route to accept asynchronous AJAX requests. Set it to false to accept only synchronous requests.
+
+Here is an example of an asynchronous route:
+
+```php
+
+namespace MyPlugin;
+
+use MyPlugin\Sci\Route;
+
+$myRoute = Route::create('get', '/blog/{permalink}', 'MyPlugin\App\Controller\Blog@view');
+$myRoute->async(true)->register();
+
+```
+
+## Route Manager
+
+When you register a route, is registered into the route manager, which is in charge of adding the new permalink structures to WordPress and clearing the permalink cache. The Route Manager is shared among all plugins using SCIWP. To get the Route Manager you just need to get the already created instance.
+
+```php
+use MyPlugin\Sci\Manager\RouteManager;
 
 $routeManager = RouteManager::instance();
-$routeManager->route('get', '/blog/{permalink|[a-z]{20}}', 'Wormvc\App\Controller\Blog@view');
 ```
 
+If you have already created a route, you can use the **_register_** method of the  **_MyPlugin\Sci\Route_** class or also the **_register_** method of the **_MyPlugin\Sci\Manager\RouteManager_** class to register it into the **Route Manager**:
 
-You can create a new route using the **route** method of the **Template Manager**. The first parameter is the request method, the second parameter is the route and the third parameter is the action to execute, which can be a method, a function or a file.
+```php
+use MyPlugin\Sci\Manager\RouteManager;
+use MyPlugin\Sci\Route;
 
-There ware more ways of creating routes. You can create a new instance of the **Route** class and then register it into the **Route Manager**:
-
-```
-use Wormvc\Wormvc\Manager\RouteManager;
-use Wormvc\Wormvc\Route;
-
-$new_route = new Route('get', '/blog/{permalink|[a-z]{20}}', 'Wormvc\App\Controller\Blog@view');
+$myRoute = Route::create('get', '/blog/{permalink}', 'MyPlugin\App\Controller\Blog@view');
 
 $routeManager = RouteManager::instance();
-$routeManager->registerRoute($new_route);
-```
-
-
-
-## Defining Routes
-
-To create a new route you need to use the route manager, which is also called router. Here is an example of how to create a route using the route method, which will create a new route and register it into the **route manager**:
-
-```
-use Wormvc\Wormvc\Manager\RouteManager;
-
-$routeManager = RouteManager::instance();
-$routeManager->route('get', '/blog/{permalink|[a-z]{20}}', 'Wormvc\App\Controller\Blog@view');
-```
-You can create a new route using the **route** method of the **Template Manager**. The first parameter is the request method, the second parameter is the route and the third parameter is the action to execute, which can be a method, a function or a file.
-
-There ware more ways of creating routes. You can create a new instance of the **Route** class and then register it into the **Route Manager**:
-
-```
-use Wormvc\Wormvc\Manager\RouteManager;
-use Wormvc\Wormvc\Route;
-
-$new_route = new Route('get', '/blog/{permalink|[a-z]{20}}', 'Wormvc\App\Controller\Blog@view');
-
-$routeManager = RouteManager::instance();
-$routeManager->registerRoute($new_route);
-```
-
-### Request methods
-
-When creating a route, the first parameter indicates the request method, which can be **get**, **post**, **put**, **patch** or **delete**. You can also specify an **array of request methods** so the endpoint answers to more than one methods, or use **any** for the endpoint to answer all request methods.
-
-For example, if you want to specify a delete method which will be in charge of deleting posts, the route might be the next one:
-
-```
-$routeManager->route('delete', '/blog/{permalink|[a-z]{20}}', 'Wormvc\App\Controller\Blog@delete');
-```
-
-### Route expression
-
-When creating a route using the route method of the route manager, you must specify the matching route using the second parameter. You can specify static routes like the next one, which is supposed to provide the same result when accessing the the URL:
-
-```
-$routeManager->route('get', '/a-simple-route', 'Wormvc\App\Controller\Simple@show');
-```
-In the previous example, the route will answer to the get request _/a-simple-route_.
-
-You can also specify dynamic parameter or variable between braces. 
-```
-$routeManager->route('get', '/cars/{model}', 'Wormvc\App\Controller\Cars@view');
-```
-
-To give an example, the previous example will answer to the get request _/cars/seat_, _/cars/ford_ and _/cars/any-model_.
-
-To make a parameter optional, just append a question mark after it:
-
-```
-$routeManager->route('get', '/cars/{model?}', 'Wormvc\App\Controller\Cars@view');
-```
-Now the route will answer to the requests _/cars_ and _/cars/any-car_.
-
-It's also possible to set some conditions for the specified parameters in the route definitions using a regular expression. For example, you might want to limit the format of the model name to the letters which go from a to z and also limit the model length to 10 characters. To do so, you would write the regular expression after the variable name, separated with a vertical bar:
-
-```
-$routeManager->route('get', '/cars/{model|[a-z]{10}', 'Wormvc\App\Controller\Cars@view');
-```
-
-Another way to define parameter requirements is to use a where clause after the route definition, so the previous example is equivalent to this one:
-```
-$routeManager->route('get', '/cars/{make}', 'Wormvc\App\Controller\Cars@view')->where('make', '[a-z]{10}');
-```
-
-You also specify additional where clauses:
-
-```
-$routeManager->route('get', '/cars/{make}/{model}', 'Wormvc\App\Controller\Cars@view')->where('make', '[a-z]{10}')->where('model', '[a-z0-9]{10}');
-```
-
-### Actions
-
-The action is the third parameter you need to define a route, and is the function or method which will be executed. You can specify a function, a method or a file:
-
-If you want the route to use a function, you can add in in this way:
-```
-$routeManager->route('get', '/cars/{make}/{model}', function($make, $model) {
-  echo('Make: ' . $make . ' | Model: ' . $model);
-});
-```
-You can also specify a method of a class formatted as _class@method_. You can use the request object to get the parameters or specify them in the definition of the class method.
-
-```
-$routeManager->route('get', '/cars/{make}/{model}', 'App\Controller\Car@showCar');
-```
-
-In the previous example, a a new instance of the class Car will be created when a user access the matching route, and the showCar method will be called. An new instance of the specified class will always be created unless the singleton pattern or the included Singleton trait is used. If you call a static method using the _class@method_ action format, a the new instance will also be created.
-
-If you just want to execute a static method of a class without creating a new instance, you can define the action using the _class::method_ format. Here is an example:
-
-```
-$routeManager->route('get', '/cars/{make}/{model}', 'App\Controller\Car@showCarStaticMethod');
-```
-
-Please note that the actions defined with the _class::method_ actions just work when referencing a static method.
-
-it's also possible to use use a file as an action. When a user access the matching route, the the specified file will be include. You must specify the full path of the file. Here is an example:
-
-```
-$routeManager->route('get', '/cars/{make}/{model}', $plugin->getDir().'/app/files/actionFile.php');
+$routeManager->register($myRoute);
 ```
 
 And this has covered all aspects related to the Route Manager.

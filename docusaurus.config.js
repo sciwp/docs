@@ -14,7 +14,7 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/sciwp-install', label: 'Framework Documentation', position: 'left'},
+        {to: 'docs/framework-install', label: 'Framework Documentation', position: 'left'},
         {to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
         {to: 'blog', label: 'Blog', position: 'left'},
         {

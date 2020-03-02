@@ -86,6 +86,50 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-2-x-94-b-4a1"
   },
+  "/docs/framework-autoloader": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-autoloader-5-e-9-670"
+  },
+  "/docs/framework-basics": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-core-4-be-5d2"
+  },
+  "/docs/framework-configuration": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-configuration-5-dd-d4a"
+  },
+  "/docs/framework-contribution": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-contribution-874-750"
+  },
+  "/docs/framework-dependencies": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-dependencies-939-1b0"
+  },
+  "/docs/framework-install": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-install-77-f-168"
+  },
+  "/docs/framework-plugin-manager": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-plugin-managereec-091"
+  },
+  "/docs/framework-prologue": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-prologue-291-f72"
+  },
+  "/docs/framework-provider-manager": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-provider-managerce-6-6ad"
+  },
+  "/docs/framework-rest-manager": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-rest-manager-9-e-2-c44"
+  },
+  "/docs/framework-route-manager": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-sciwp-route-managerd-27-0a1"
+  },
   "/docs/mdx": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-mdx-45-a-26c"
@@ -106,32 +150,12 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-plugin-mdx-615-343"
   },
-  "/docs/sciwp-autoloader": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-sciwp-autoloader-253-483"
-  },
   "/docs/sciwp-collections": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-sciwp-collections-036-9f4"
   },
-  "/docs/sciwp-configuration": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-sciwp-configuration-22-c-e88"
-  },
   "/docs/sciwp-dependency-injection": {
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-sciwp-dependency-injection-7-f-6-ccf"
-  },
-  "/docs/sciwp-install": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-sciwp-install-1-d-7-23c"
-  },
-  "/docs/sciwp-plugin-manager": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-sciwp-plugin-managerd-81-986"
-  },
-  "/docs/sciwp-route-manager": {
-    "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-sciwp-route-managerc-6-d-9d5"
   }
 }

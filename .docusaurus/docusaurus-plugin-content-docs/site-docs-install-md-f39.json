@@ -7,6 +7,10 @@
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/install.md",
   "sidebar_label": "Installation",
   "sidebar": "someSidebar",
+  "previous": {
+    "title": "Contribution",
+    "permalink": "/docs/sciwp-contribution"
+  },
   "next": {
     "title": "Configuration",
     "permalink": "/docs/sciwp-configuration"

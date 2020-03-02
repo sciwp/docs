@@ -3,22 +3,54 @@
     "someSidebar": [
       {
         "type": "category",
+        "label": "Introduction",
+        "items": [
+          {
+            "type": "link",
+            "label": "Prologue",
+            "href": "/docs/framework-prologue"
+          },
+          {
+            "type": "link",
+            "label": "Contribution",
+            "href": "/docs/framework-contribution"
+          }
+        ]
+      },
+      {
+        "type": "category",
         "label": "Getting Started",
         "items": [
           {
             "type": "link",
             "label": "Installation",
-            "href": "/docs/sciwp-install"
+            "href": "/docs/framework-install"
           },
           {
             "type": "link",
             "label": "Configuration",
-            "href": "/docs/sciwp-configuration"
+            "href": "/docs/framework-configuration"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Architecture",
+        "items": [
+          {
+            "type": "link",
+            "label": "Basics",
+            "href": "/docs/framework-basics"
           },
           {
             "type": "link",
             "label": "Autoloader",
-            "href": "/docs/sciwp-autoloader"
+            "href": "/docs/framework-autoloader"
+          },
+          {
+            "type": "link",
+            "label": "Dependencies",
+            "href": "/docs/framework-dependencies"
           }
         ]
       },
@@ -28,13 +60,23 @@
         "items": [
           {
             "type": "link",
-            "label": "Plugin Manager",
-            "href": "/docs/sciwp-plugin-manager"
+            "label": "Plugins",
+            "href": "/docs/framework-plugin-manager"
           },
           {
             "type": "link",
-            "label": "Route Manager",
-            "href": "/docs/sciwp-route-manager"
+            "label": "Routes",
+            "href": "/docs/framework-route-manager"
+          },
+          {
+            "type": "link",
+            "label": "Rest Routes",
+            "href": "/docs/framework-rest-manager"
+          },
+          {
+            "type": "link",
+            "label": "Providers",
+            "href": "/docs/framework-provider-manager"
           }
         ]
       },
@@ -62,11 +104,17 @@
     ]
   },
   "permalinkToSidebar": {
-    "/docs/mdx": "someSidebar",
-    "/docs/sciwp-autoloader": "someSidebar",
-    "/docs/sciwp-configuration": "someSidebar",
-    "/docs/sciwp-install": "someSidebar",
-    "/docs/sciwp-plugin-manager": "someSidebar",
-    "/docs/sciwp-route-manager": "someSidebar"
+    "/docs/framework-autoloader": "someSidebar",
+    "/docs/framework-basics": "someSidebar",
+    "/docs/framework-configuration": "someSidebar",
+    "/docs/framework-contribution": "someSidebar",
+    "/docs/framework-dependencies": "someSidebar",
+    "/docs/framework-install": "someSidebar",
+    "/docs/framework-plugin-manager": "someSidebar",
+    "/docs/framework-prologue": "someSidebar",
+    "/docs/framework-provider-manager": "someSidebar",
+    "/docs/framework-rest-manager": "someSidebar",
+    "/docs/framework-route-manager": "someSidebar",
+    "/docs/mdx": "someSidebar"
   }
 }

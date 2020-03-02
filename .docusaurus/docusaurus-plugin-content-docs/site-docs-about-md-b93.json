@@ -1,0 +1,14 @@
+{
+  "id": "sciwp-about",
+  "title": "Prologue",
+  "description": "SCIWP Framework allows to follow a typical MVC architecture for WordPress plugin development, including many functionalities which can be usually found in most MVC PHP Frameworks.\r",
+  "source": "@site/docs\\about.md",
+  "permalink": "/docs/sciwp-about",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/about.md",
+  "sidebar_label": "Prologue",
+  "sidebar": "someSidebar",
+  "next": {
+    "title": "Contribution",
+    "permalink": "/docs/sciwp-contribution"
+  }
+}

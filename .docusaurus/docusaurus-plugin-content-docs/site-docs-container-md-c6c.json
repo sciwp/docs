@@ -1,0 +1,18 @@
+{
+  "id": "sciwp-container",
+  "title": "Container",
+  "description": "",
+  "source": "@site/docs\\container.md",
+  "permalink": "/docs/sciwp-container",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/container.md",
+  "sidebar_label": "Container",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Autoloader",
+    "permalink": "/docs/sciwp-autoloader"
+  },
+  "next": {
+    "title": "Dependencies",
+    "permalink": "/docs/sciwp-dependency-injection"
+  }
+}

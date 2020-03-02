@@ -7,7 +7,7 @@
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/mdx.md",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Route Manager",
-    "permalink": "/docs/sciwp-route-manager"
+    "title": "Providers",
+    "permalink": "/docs/framework-provider-manager"
   }
 }
