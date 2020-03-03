@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i|Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto:400,400i,500,500i,700,700i|Sriracha&display=swap');
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -16,7 +16,7 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 100%;
 }
 
 .docusaurus-highlight-code-line {
@@ -56,3 +56,7 @@ section.mvc {
 section.mvc h2 {
   color: #3c4858;
 }
+
+article {
+  font-size: 18px;
+ }
