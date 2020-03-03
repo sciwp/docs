@@ -76,6 +76,12 @@ export default [
   
 },
 {
+  path: '/docs/framework-activation',
+  component: ComponentCreator('/docs/framework-activation'),
+  exact: true,
+  
+},
+{
   path: '/docs/framework-autoloader',
   component: ComponentCreator('/docs/framework-autoloader'),
   exact: true,
@@ -100,6 +106,12 @@ export default [
   
 },
 {
+  path: '/docs/framework-deactivation',
+  component: ComponentCreator('/docs/framework-deactivation'),
+  exact: true,
+  
+},
+{
   path: '/docs/framework-dependencies',
   component: ComponentCreator('/docs/framework-dependencies'),
   exact: true,
@@ -108,6 +120,12 @@ export default [
 {
   path: '/docs/framework-install',
   component: ComponentCreator('/docs/framework-install'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-models',
+  component: ComponentCreator('/docs/framework-models'),
   exact: true,
   
 },
@@ -138,6 +156,12 @@ export default [
 {
   path: '/docs/framework-route-manager',
   component: ComponentCreator('/docs/framework-route-manager'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework-template-manager',
+  component: ComponentCreator('/docs/framework-template-manager'),
   exact: true,
   
 },

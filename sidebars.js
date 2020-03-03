@@ -10,9 +10,9 @@ module.exports = {
     'Introduction': ['framework-prologue', 'framework-contribution'],
     'Getting Started': ['framework-install', 'framework-configuration'],
     'Architecture': ['framework-basics', 'framework-autoloader', 'framework-dependencies'],
-    'Components': ['framework-plugin-manager', 'framework-route-manager', 'framework-rest-manager', 'framework-provider-manager'],
-    'Extensions': [/*'framework-extensionsr'*/],
+    'Components': ['framework-plugin-manager', 'framework-route-manager', 'framework-rest-manager', 'framework-template-manager', 'framework-provider-manager'],
+    'Extensions': ['framework-activation', 'framework-deactivation'],
+    'Database': ['framework-models'],
     'Structures': [/*'framework-collections'*/],
-    //Features: ['mdx'],
   },
 };

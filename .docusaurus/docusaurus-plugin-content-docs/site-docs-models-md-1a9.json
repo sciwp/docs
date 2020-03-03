@@ -1,0 +1,14 @@
+{
+  "id": "framework-models",
+  "title": "Models",
+  "description": "SCIWP allows to create models, link them to database tables and execute queries directly from the models in the same way you would do it with any other PHP framework. The idea behind the SCIWP core Model class is to provide a zero configuration abstraction, so the model just works by setting the database table matching the model.\r",
+  "source": "@site/docs\\models.md",
+  "permalink": "/docs/framework-models",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/models.md",
+  "sidebar_label": "Models",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Dectivation",
+    "permalink": "/docs/framework-deactivation"
+  }
+}

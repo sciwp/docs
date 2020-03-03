@@ -8,7 +8,11 @@
   "sidebar_label": "Providers",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Rest Routes",
-    "permalink": "/docs/framework-rest-manager"
+    "title": "Templates",
+    "permalink": "/docs/framework-template-manager"
+  },
+  "next": {
+    "title": "Activation",
+    "permalink": "/docs/framework-activation"
   }
 }

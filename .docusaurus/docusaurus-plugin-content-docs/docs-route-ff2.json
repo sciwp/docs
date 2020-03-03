@@ -75,6 +75,11 @@
           },
           {
             "type": "link",
+            "label": "Templates",
+            "href": "/docs/framework-template-manager"
+          },
+          {
+            "type": "link",
             "label": "Providers",
             "href": "/docs/framework-provider-manager"
           }
@@ -83,7 +88,29 @@
       {
         "type": "category",
         "label": "Extensions",
-        "items": []
+        "items": [
+          {
+            "type": "link",
+            "label": "Activation",
+            "href": "/docs/framework-activation"
+          },
+          {
+            "type": "link",
+            "label": "Dectivation",
+            "href": "/docs/framework-deactivation"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Database",
+        "items": [
+          {
+            "type": "link",
+            "label": "Models",
+            "href": "/docs/framework-models"
+          }
+        ]
       },
       {
         "type": "category",
@@ -93,16 +120,20 @@
     ]
   },
   "permalinkToSidebar": {
+    "/docs/framework-activation": "someSidebar",
     "/docs/framework-autoloader": "someSidebar",
     "/docs/framework-basics": "someSidebar",
     "/docs/framework-configuration": "someSidebar",
     "/docs/framework-contribution": "someSidebar",
+    "/docs/framework-deactivation": "someSidebar",
     "/docs/framework-dependencies": "someSidebar",
     "/docs/framework-install": "someSidebar",
+    "/docs/framework-models": "someSidebar",
     "/docs/framework-plugin-manager": "someSidebar",
     "/docs/framework-prologue": "someSidebar",
     "/docs/framework-provider-manager": "someSidebar",
     "/docs/framework-rest-manager": "someSidebar",
-    "/docs/framework-route-manager": "someSidebar"
+    "/docs/framework-route-manager": "someSidebar",
+    "/docs/framework-template-manager": "someSidebar"
   }
 }
