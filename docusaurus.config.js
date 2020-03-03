@@ -15,8 +15,8 @@ module.exports = {
       },
       links: [
         {to: 'docs/framework-install', label: 'Framework Documentation', position: 'left'},
-        {to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        //{to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
+        //{to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/sciwp/',
           label: 'GitHub',
@@ -38,44 +38,44 @@ module.exports = {
         {
           title: 'Docs',
           items: [
-            {
+            /*{
               label: 'Style Guide',
               to: 'docs/doc1',
-            },
+            },*/
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'Framework',
+              to: 'docs/framework-prologue',
             },
           ],
         },
         {
           title: 'Community',
           items: [
-            {
+            /*{
               label: 'Stack Overflow',
               href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
+            },*/
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://discord.gg/dKjBhJ',
             },
           ],
         },
         {
           title: 'Social',
           items: [
-            {
+            /*{
               label: 'Blog',
               to: 'blog',
-            },
+            },*/
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/sciwp',
             },
-            {
+            /*{
               label: 'Twitter',
               href: 'https://twitter.com/docusaurus',
-            },
+            },*/
           ],
         },
       ],

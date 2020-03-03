@@ -13,6 +13,6 @@ module.exports = {
     'Components': ['framework-plugin-manager', 'framework-route-manager', 'framework-rest-manager', 'framework-provider-manager'],
     'Extensions': [/*'framework-extensionsr'*/],
     'Structures': [/*'framework-collections'*/],
-    Features: ['mdx'],
+    //Features: ['mdx'],
   },
 };

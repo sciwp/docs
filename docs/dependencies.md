@@ -166,13 +166,13 @@ use MyPlugin\Sci\Sci;
 use MyPlugin\App\Controllers\CarController;
 
 # The CarManager will be injected
-$carController = Sci::make(CarController:class);
+$carController = Sci::make(CarController:class, ['seat']);
 
 ```
 
 Easy and for all the family :-)
 
-## Bindings
+## Container Bindings
 
 Imagine that you want to quickly replace a dependence with a different implementation. Ideally, the dependence would be referenced with an interface in the constructor so we can easily swap it for a different one. We can achieve this with bindings, and the best place to do this are the providers. 
 
@@ -180,36 +180,103 @@ Imagine that you want to quickly replace a dependence with a different implement
 
 ### Closure Binding
 
-Imagine that you want to inject an interface and easily swap it with different implementations. You can use the bind method with a closure where you will return an instance of a class which implements the interface. This is useful when we want o return different implementations based on our configuration:
+You can use the bind method with a closure where you will return a different instance of the requested class. This is useful when we want o return different implementations.
 
 
 ```php
 namespace MyPlugin;
 
 use MyPlugin\Sci\Sci;
-use MyPlugin\App\Controllers\CarController;
+use MyPlugin\App\Services\Storage;
 use MyPlugin\App\Services\CarManager;
-use MyPlugin\App\Test\Services\CarManager as TestCarManager;
 
-# Bind the CarController to a fixed implementation
-$carController = $container->bind(CarController:class, function() {
+# Bind the CarManager to a fixed implementation
+$container->bind(CarManager:class, function() {
 
     if (WP_DEBUG) {
-        return new CarController(Sci::make(TestCarManager::class));
+        return new CarManager(Sci::make(Storage::class, ['dev']));
     } else {
-        return new CarController(Sci::make(CarManager::class));
+        return new CarManager(Sci::make(Storage::class ['production']));
     }
 });
 
 ```
-However, this is usually done in the providers and it's a good practice to swap the providers and avoid these checks in your code. We will see the providers in depth in the Components section.
+
+In the previous exmaple we replace the **_CarManager_** with a different implementation based on the environment. However, this is usually done in the providers and you wouldn't usually have these condition checks inside the bind method.
+
+The extended practice is to have two different providers swapping them and returning a single instance inside the binding code
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Sci;
+use MyPlugin\App\Services\Storage;
+use MyPlugin\App\Services\CarManager;
+
+# Binding the CarManager inside a provider
+$container->bind(CarManager:class, function() {
+    return new CarManager(Sci::make(Storage::class, ['dev']));
+});
+
+```
+
+ We will see the providers in depth in the Components section.
+
+### Singleton Binding
+If you want to bind a singleton so there's just one instance of a service in your plugin, you can bind da singleton. You may think that you can just apply the singleton patternt in the service class, and you are right. However, this will just allow to have just one and only one instance, even when you are testing. Ideally, you should define singletons using the ```singleton``` binding method:
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Sci;
+use MyPlugin\App\Services\Storage;
+use MyPlugin\App\Services\CarManager;
+
+# Always return the same instance
+$container->singleton(CarManager:class, function() {
+    return new CarManager(Sci::make(Storage::class, ['dev']));
+});
+
+```
+
+When using the singleton method, the container will create just one instance of the requested class. The good side of this is that you can always use a different provider and change this behaviour.
 
 
+### Instance Binding
 
+You can also bind an interface or a class with a specific instance of the class or interface. To do so, you just need create an instance of the class you want to bind and bind the class with the created instance. Here is an example: 
 
+```php
+namespace MyPlugin;
 
+use MyPlugin\Sci\Sci;
+use MyPlugin\App\Services\CarManager;
 
+$carManager = new CarManager();
 
+# Bind the class with the created instance
+$container->bind(CarManager:class, $carManager);
+```
 
-If we continue with our previous example, we could replace the **_CarManager_** we used in the **_CarCantroller_** with another implementation, but in this case, the CarManager would be an interface, as this would allow to use different implementations.
+### Interface Binding
+
+Imagine that you want to inject an interface and easily swap it with different implementations. You can also use the ```bind``` method to bind the interface to a specific implementation. For example, this is useful when we want o return different implementations based on any environment variable. Here is an example:
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Sci;
+use MyPLugin\App\Services\IMotorService;
+use MyPLugin\App\Services\MyMotorService;
+
+# Bind the IMotorService interface to the AcmeMotorService implementation
+$container->bind(IMotorService::class, MyMotorService::class);
+```
+Once the interface is binded, everytime the **_IMotorService_** is requested as an dependency it will always be injected the **_MyMotorService_** implementation.
+
+## Container Actions
+
+### Create Action on('create', 'method', 'bla')
+
+### Resolve Action on('resolve', 'method', 'bla')
 

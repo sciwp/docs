@@ -89,17 +89,6 @@
         "type": "category",
         "label": "Structures",
         "items": []
-      },
-      {
-        "type": "category",
-        "label": "Features",
-        "items": [
-          {
-            "type": "link",
-            "label": "Powered by MDX",
-            "href": "/docs/mdx"
-          }
-        ]
       }
     ]
   },
@@ -114,7 +103,6 @@
     "/docs/framework-prologue": "someSidebar",
     "/docs/framework-provider-manager": "someSidebar",
     "/docs/framework-rest-manager": "someSidebar",
-    "/docs/framework-route-manager": "someSidebar",
-    "/docs/mdx": "someSidebar"
+    "/docs/framework-route-manager": "someSidebar"
   }
 }

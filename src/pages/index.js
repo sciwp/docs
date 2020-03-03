@@ -169,6 +169,8 @@ function Home() {
             </div>
           </section>
         )}
+        {
+        /*
         <section className="mvc">
           <div className="container">
             <div className="row">
@@ -184,6 +186,7 @@ function Home() {
             </div>
           </div>
         </section>
+        */}
       </main>
 
     </Layout>
