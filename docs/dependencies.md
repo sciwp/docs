@@ -223,7 +223,7 @@ $container->bind(CarManager:class, function() {
  We will see the providers in depth in the Components section.
 
 ### Singleton Binding
-If you want to bind a singleton so there's just one instance of a service in your plugin, you can bind da singleton. You may think that you can just apply the singleton patternt in the service class, and you are right. However, this will just allow to have just one and only one instance, even when you are testing. Ideally, you should define singletons using the ```singleton``` binding method:
+If you want to bind a singleton so there is just one instance of a service in your plugin, you can bind da singleton. You may think that you can just apply the singleton patternt in the service class, and you are right. However, this will just allow to have just one and only one instance, even when you are testing. Ideally, you should define singletons using the ```singleton``` binding method:
 
 ```php
 namespace MyPlugin;
@@ -240,6 +240,17 @@ $container->singleton(CarManager:class, function() {
 ```
 
 When using the singleton method, the container will create just one instance of the requested class. The good side of this is that you can always use a different provider and change this behaviour.
+
+
+You can also force the creation of one instance of a class using the ```singleton``` method with just one parameter:
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Sci;
+use MyPlugin\App\Services\CarManager;
+
+# Always return the same instance
+$container->singleton(CarManager:class);
 
 
 ### Instance Binding
@@ -274,9 +285,35 @@ $container->bind(IMotorService::class, MyMotorService::class);
 ```
 Once the interface is binded, everytime the **_IMotorService_** is requested as an dependency it will always be injected the **_MyMotorService_** implementation.
 
-## Container Actions
+## Instance Actions
 
-### Create Action on('create', 'method', 'bla')
+The service container allows to add and execute a set of custom actions when a new instance of an object is created. You can add actions using the ```created```. Here are the parameters supported by the ```created``` method:
 
-### Resolve Action on('resolve', 'method', 'bla')
+* **class (string)**: The class to add the action.
+* **action (string)**: This is the function to be executed when an instance is created..
+
+This action will be executed immediately after the container creates an instance of the specified class. Here is an example of how to bind an action to the creation event of a class:
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Sci;
+use MyPLugin\App\Services\MotorService;
+
+# Action executed when an instance of the MotorService class is created
+$container->created(MotorService::class, function ($object, $sci) { /* ... */ });
+```
+
+This action will be executed when the instance is created. The function used can have a two optional arguments. The first one is the object which was just created, and the second one an instance of the **_Sci_** class. You can add more custom parameters after those.
+
+```php
+namespace MyPlugin;
+
+use MyPlugin\Sci\Sci;
+use MyPLugin\App\Services\MotorService;
+
+# You can add more paramters after the default ones
+$container->created(MotorService::class, function ($object, $sci, $thirdParameter) { /* ... */ });
+```
+
 
