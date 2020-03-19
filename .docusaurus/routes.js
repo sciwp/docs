@@ -124,6 +124,12 @@ export default [
   
 },
 {
+  path: '/docs/framework-model-queries',
+  component: ComponentCreator('/docs/framework-model-queries'),
+  exact: true,
+  
+},
+{
   path: '/docs/framework-models',
   component: ComponentCreator('/docs/framework-models'),
   exact: true,

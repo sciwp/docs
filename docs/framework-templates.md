@@ -4,79 +4,89 @@ title: Templates
 sidebar_label: Templates
 ---
 
-Template files are usually added in WordPress themes for the different post types available. However, it´s possible to add the, using the SCIWP Template Manager. The template will consist in a `.php` file located within one of the plugins using the framework, but a theme file can be also specified so it´s possible to customize the templates.
+Template files are usually added in WordPress themes for the different post types available. The template consist in a `.php` file located within one of the plugins using the framework, but a theme file can be also specified so it's possible to customize the templates.
 
-It´s possible to select a template files when a new page or a new post is created in WordPress. Templates can be added to WordPress using both the SCIWP template manager or the template service attached to each plugin using SCIWP. It´s also possible to define them in the plugin config files.
+It's possible to select a template files when a new page or a new post is created in WordPress.
 
-## Define templates using the plugin config file
+## Creating Templates
 
-The templates defined in the the plugins config file must be defined under the `templates` key. Here is an example:
+Templates can be added to WordPress using both the SCIWP template class. It's also possible to define them in the plugin config files.
 
-```php
-'templates' => [
-  'template_id_1' => [
-    'path' => 'relative/plugin/route/to/template_1.php',
-    'name' => 'Template 1 name',
-    'theme_path' => 'relative/theme/route/to/template_1.php',
-    'post_types' => ['post'],
-  ],
-  'template_id_2' => [
-    'path' => 'relative/plugin/route/to/template_2.php',
-    'name' => 'Template 2 name',
-    'theme_path' => 'relative/theme/route/to/template_2.php',
-    'post_types' => ['gallery', 'news'],
-  ],
-],
-```
-When defining a template, only the id and the template plugin file route are required. If no name is provided, the template id will be used instead:
+### Using the Template Class
+
+To create a template you can use the **create** method of the **Template** class. The **create** method accepts the following parameters:
+
+* **templateFile (string)**: The full path to the template file.
+* **templateName (string)**: The template name which will be displayed in WordPress backend.
+* **postTypes (array|string)**: The array of post types in which will you would like to make this template available.
+* **themeTemplateFile (string)**: The full path to the theme template file.
+
+Let's see first how to create a new template. Here is an example:
 
 ```php
-'templates' => [
-  'template_id_1' => [
-     'path' => 'relative/plugin/route/to/template_1.php',
-     'name' => 'Template 1 name',
-     'theme_path' => 'relative/theme/route/to/template_1.php',
-     'post_types' => ['post'],
-  ],
-],
-```
-## Define templates using the Template class
+namespace MyPlugin;
 
-This is another way to define templates. You can create a new instance of a a template and then add it manually to the **template manager**. Let´s see first how to create a new template.
-
-### Create a new template instance
-
-You just need to create a new instance of the template class:
-
-```php
-$template= new \MyPlugin\Sci\Template($plugin_id, $plugin_template_file, $template_name, $post_types, $theme_template_file);
-```
-
-Here is an example:
-
-```php
 use \MyPlugin\Sci\Template;
 
-$template = new Template('plugin_id', 'templates/template_file.php', 'Great template', ['post', 'article'], 'my_plugin_files/templates/template_file.php');
+$template = Template::create('full/path/to/template_file.php', 'Template name', ['post', 'article'], 'relative/path/to/theme_template_file.php');
 ```
 
-It´s also possible to create a new template using an array notation, so just the plugin_id and the template definition in array format are required: 
+It´s also possible to create a new template using an array notation: 
 
 ```php
+namespace MyPlugin;
+
 use \MyPlugin\Sci\Template;
 
-$template = new Template(
-  'plugin_id',
+$template = Template::create(
   [
-    'path' => 'templates/template_file.php',
-    'name' => 'Great template',
-    'theme_path' => 'my_plugin_files/templates/template_file.php',
+    'path' => 'full/path/to/template_file.php',
+    'name' => 'Template name',
+    'theme_path' => 'relative/path/to/theme_template_file.php',
     'post_types' => ['post', 'article']
   ]
 );
 ```
 
-### Add the template to the Template Manager
+### Using the Config File
+
+The templates defined in the the plugins config file must be defined under the `templates` key. Here is an example:
+
+```php
+'templates' => [
+  'template_key' => [
+    'path' => 'relative/path/to/template_file_1.php',
+    'name' => 'Template 1 name',
+    'theme_path' => 'relative/path/to/theme_template_file_1.php',
+    'post_types' => ['post'],
+  ],
+  'template_key_2' => [
+    'path' => 'relative/path/to/template_file_2.php',
+    'name' => 'Template 2 name',
+    'theme_path' => 'relative/path/to/theme_template_file_2.php',
+    'post_types' => ['gallery', 'news'],
+  ],
+],
+```
+When defining a template, only the id and the template plugin file route are required. If no name is provided, the template id will be used instead. If no post type is used, the **_post_** post type will be used by default:
+
+```php
+'templates' => [
+  'template_id_1' => [
+     'theme_path' => 'relative/theme/route/to/template_1.php',
+  ],
+],
+```
+
+You can also specify the tempalte using the string notation:
+
+```php
+'templates' => [
+  'template_id_1' => 'relative/theme/route/to/template_1.php',
+],
+```
+
+## Registering Templates
 
 After creating a new template, it should be added to the template manager so WordPress is aware of it. You can just use the `add` function of the Template class, which just requires the template id.
 
@@ -103,7 +113,7 @@ use \MyPlugin\Sci\Template;
 Template::add('template_id', 'plugin_id', 'templates/template_file.php', 'Great template', ['post', 'article'], 'my_plugin_files/templates/template_file.php');
 ```
 
-## Define templates using the Template Manager
+## The Template Manager
 
 Another option to define templates consists in using the `template` or the `templates` functions of the **template manager**. These templates allow to create templates and add them to the template manager using just one function.
 

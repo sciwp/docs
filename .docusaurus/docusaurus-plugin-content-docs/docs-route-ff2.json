@@ -109,6 +109,11 @@
             "type": "link",
             "label": "Models",
             "href": "/docs/framework-models"
+          },
+          {
+            "type": "link",
+            "label": "Model Queries",
+            "href": "/docs/framework-model-queries"
           }
         ]
       },
@@ -128,6 +133,7 @@
     "/docs/framework-deactivation": "someSidebar",
     "/docs/framework-dependencies": "someSidebar",
     "/docs/framework-install": "someSidebar",
+    "/docs/framework-model-queries": "someSidebar",
     "/docs/framework-models": "someSidebar",
     "/docs/framework-plugin-manager": "someSidebar",
     "/docs/framework-prologue": "someSidebar",

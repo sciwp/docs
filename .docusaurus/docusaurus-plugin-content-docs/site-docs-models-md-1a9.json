@@ -10,5 +10,9 @@
   "previous": {
     "title": "Dectivation",
     "permalink": "/docs/framework-deactivation"
+  },
+  "next": {
+    "title": "Model Queries",
+    "permalink": "/docs/framework-model-queries"
   }
 }
