@@ -1,0 +1,9 @@
+{
+  "id": "framework/style-manager",
+  "title": "Styles",
+  "description": "WordPress already offer a way to inject styles into the website header. However it requires to create a new method where you register and enqueue the files. With SCIWP you can add new CSS files by just using one line of code, so you don't need to create additional methods.\r",
+  "source": "@site/docs\\framework\\style-manager.md",
+  "permalink": "/docs/framework/style-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/style-manager.md",
+  "sidebar_label": "Styles"
+}

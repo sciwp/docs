@@ -1,0 +1,18 @@
+{
+  "id": "framework/plugin-deactivation",
+  "title": "Plugin Deactivation",
+  "description": "SCIWP includes a **Deactivation Service** which allows to execute some custom actions when a plugin using the framework is disabled.\r",
+  "source": "@site/docs\\framework\\plugin-deactivation.md",
+  "permalink": "/docs/framework/plugin-deactivation",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/plugin-deactivation.md",
+  "sidebar_label": "Plugin Dectivation",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Plugin Activation",
+    "permalink": "/docs/framework/plugin-activation"
+  },
+  "next": {
+    "title": "Routes",
+    "permalink": "/docs/framework/routes"
+  }
+}

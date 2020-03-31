@@ -1,0 +1,14 @@
+{
+  "id": "framework/model-queries",
+  "title": "Model Queries",
+  "description": "You can use the query method to start an advanced query with the model. The method will return the query itself so you can add condition after condition and get the results in the end.\r",
+  "source": "@site/docs\\framework\\model-queries.md",
+  "permalink": "/docs/framework/model-queries",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/model-queries.md",
+  "sidebar_label": "Model Queries",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Models",
+    "permalink": "/docs/framework/models"
+  }
+}

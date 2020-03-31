@@ -76,98 +76,128 @@ export default [
   
 },
 {
-  path: '/docs/framework-activation',
-  component: ComponentCreator('/docs/framework-activation'),
+  path: '/docs/framework/addon-plugins',
+  component: ComponentCreator('/docs/framework/addon-plugins'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-autoloader',
-  component: ComponentCreator('/docs/framework-autoloader'),
+  path: '/docs/framework/assets',
+  component: ComponentCreator('/docs/framework/assets'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-basics',
-  component: ComponentCreator('/docs/framework-basics'),
+  path: '/docs/framework/autoloader',
+  component: ComponentCreator('/docs/framework/autoloader'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-configuration',
-  component: ComponentCreator('/docs/framework-configuration'),
+  path: '/docs/framework/basics',
+  component: ComponentCreator('/docs/framework/basics'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-contribution',
-  component: ComponentCreator('/docs/framework-contribution'),
+  path: '/docs/framework/configuration',
+  component: ComponentCreator('/docs/framework/configuration'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-deactivation',
-  component: ComponentCreator('/docs/framework-deactivation'),
+  path: '/docs/framework/contribution',
+  component: ComponentCreator('/docs/framework/contribution'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-dependencies',
-  component: ComponentCreator('/docs/framework-dependencies'),
+  path: '/docs/framework/dependencies',
+  component: ComponentCreator('/docs/framework/dependencies'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-install',
-  component: ComponentCreator('/docs/framework-install'),
+  path: '/docs/framework/installation',
+  component: ComponentCreator('/docs/framework/installation'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-model-queries',
-  component: ComponentCreator('/docs/framework-model-queries'),
+  path: '/docs/framework/model-queries',
+  component: ComponentCreator('/docs/framework/model-queries'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-models',
-  component: ComponentCreator('/docs/framework-models'),
+  path: '/docs/framework/models',
+  component: ComponentCreator('/docs/framework/models'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-plugin-manager',
-  component: ComponentCreator('/docs/framework-plugin-manager'),
+  path: '/docs/framework/plugin-activation',
+  component: ComponentCreator('/docs/framework/plugin-activation'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-prologue',
-  component: ComponentCreator('/docs/framework-prologue'),
+  path: '/docs/framework/plugin-deactivation',
+  component: ComponentCreator('/docs/framework/plugin-deactivation'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-provider-manager',
-  component: ComponentCreator('/docs/framework-provider-manager'),
+  path: '/docs/framework/plugin-services',
+  component: ComponentCreator('/docs/framework/plugin-services'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-rest-manager',
-  component: ComponentCreator('/docs/framework-rest-manager'),
+  path: '/docs/framework/plugins',
+  component: ComponentCreator('/docs/framework/plugins'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-route-manager',
-  component: ComponentCreator('/docs/framework-route-manager'),
+  path: '/docs/framework/prologue',
+  component: ComponentCreator('/docs/framework/prologue'),
   exact: true,
   
 },
 {
-  path: '/docs/framework-template-manager',
-  component: ComponentCreator('/docs/framework-template-manager'),
+  path: '/docs/framework/providers',
+  component: ComponentCreator('/docs/framework/providers'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework/rest',
+  component: ComponentCreator('/docs/framework/rest'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework/routes',
+  component: ComponentCreator('/docs/framework/routes'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework/style-manager',
+  component: ComponentCreator('/docs/framework/style-manager'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework/templates',
+  component: ComponentCreator('/docs/framework/templates'),
+  exact: true,
+  
+},
+{
+  path: '/docs/framework/views',
+  component: ComponentCreator('/docs/framework/views'),
   exact: true,
   
 },

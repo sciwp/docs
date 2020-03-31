@@ -6,13 +6,15 @@
  */
 
 module.exports = {
-  someSidebar: {
-    'Introduction': ['framework-prologue', 'framework-contribution'],
-    'Getting Started': ['framework-install', 'framework-configuration'],
-    'Architecture': ['framework-basics', 'framework-autoloader', 'framework-dependencies'],
-    'Components': ['framework-plugin-manager', 'framework-route-manager', 'framework-rest-manager', 'framework-template-manager', 'framework-provider-manager'],
-    'Extensions': ['framework-activation', 'framework-deactivation'],
-    'Database': ['framework-models', 'framework-model-queries'],
+  frameworkSidebar: {
+    'Introduction': ['framework/prologue', 'framework/contribution'],
+    'Getting Started': ['framework/installation', 'framework/configuration'],
+    'Architecture': ['framework/basics', 'framework/autoloader', 'framework/dependencies'],
+    'Plugins': ['framework/plugins', 'framework/addon-plugins', 'framework/plugin-activation', 'framework/plugin-deactivation'],
+    'Routes': ['framework/routes', 'framework/rest' ],
+    'Services': ['framework/providers' ],
+    'Frontend': ['framework/views', 'framework/templates', 'framework/assets'],
+    'Database': ['framework/models', 'framework/model-queries'],
     'Structures': [/*'framework-collections'*/], 
   },
 };

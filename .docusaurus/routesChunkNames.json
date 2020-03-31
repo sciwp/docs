@@ -86,69 +86,89 @@
     "component": "component---theme-doc-item-178-a40",
     "content": "content---docs-2-x-94-b-4a1"
   },
-  "/docs/framework-activation": {
+  "/docs/framework/addon-plugins": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-activation-592-792"
+    "content": "content---docs-framework-addon-plugins-90-e-d5a"
   },
-  "/docs/framework-autoloader": {
+  "/docs/framework/assets": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-autoloader-5-e-9-8bc"
+    "content": "content---docs-framework-assets-11-d-209"
   },
-  "/docs/framework-basics": {
+  "/docs/framework/autoloader": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-basics-4-be-d32"
+    "content": "content---docs-framework-autoloaderf-2-e-c7d"
   },
-  "/docs/framework-configuration": {
+  "/docs/framework/basics": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-configuration-5-dd-c92"
+    "content": "content---docs-framework-basicsddb-510"
   },
-  "/docs/framework-contribution": {
+  "/docs/framework/configuration": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-contribution-874-43b"
+    "content": "content---docs-framework-configuration-03-b-499"
   },
-  "/docs/framework-deactivation": {
+  "/docs/framework/contribution": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-deactivation-54-d-c98"
+    "content": "content---docs-framework-contributionea-8-b37"
   },
-  "/docs/framework-dependencies": {
+  "/docs/framework/dependencies": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-dependencies-939-d60"
+    "content": "content---docs-framework-dependencies-5-c-2-46d"
   },
-  "/docs/framework-install": {
+  "/docs/framework/installation": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-install-77-f-bfa"
+    "content": "content---docs-framework-installationaae-c5b"
   },
-  "/docs/framework-model-queries": {
+  "/docs/framework/model-queries": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-model-queriesb-35-62c"
+    "content": "content---docs-framework-model-queries-793-bc8"
   },
-  "/docs/framework-models": {
+  "/docs/framework/models": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-models-1-a-9-840"
+    "content": "content---docs-framework-modelsa-33-35d"
   },
-  "/docs/framework-plugin-manager": {
+  "/docs/framework/plugin-activation": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-plugin-managereec-d86"
+    "content": "content---docs-framework-plugin-activation-6-de-772"
   },
-  "/docs/framework-prologue": {
+  "/docs/framework/plugin-deactivation": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-prologue-291-178"
+    "content": "content---docs-framework-plugin-deactivation-4-db-85d"
   },
-  "/docs/framework-provider-manager": {
+  "/docs/framework/plugin-services": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-provider-managerce-6-e25"
+    "content": "content---docs-framework-plugin-services-221-a7b"
   },
-  "/docs/framework-rest-manager": {
+  "/docs/framework/plugins": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-rest-manager-9-e-2-440"
+    "content": "content---docs-framework-pluginsa-78-47c"
   },
-  "/docs/framework-route-manager": {
+  "/docs/framework/prologue": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-route-managerd-27-748"
+    "content": "content---docs-framework-prologuede-3-48e"
   },
-  "/docs/framework-template-manager": {
+  "/docs/framework/providers": {
     "component": "component---theme-doc-item-178-a40",
-    "content": "content---docs-framework-template-manager-8-f-3-b3f"
+    "content": "content---docs-framework-providers-859-8f7"
+  },
+  "/docs/framework/rest": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-framework-rest-8-f-0-84f"
+  },
+  "/docs/framework/routes": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-framework-routes-588-04b"
+  },
+  "/docs/framework/style-manager": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-framework-style-managera-19-aae"
+  },
+  "/docs/framework/templates": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-framework-templatesd-5-e-a11"
+  },
+  "/docs/framework/views": {
+    "component": "component---theme-doc-item-178-a40",
+    "content": "content---docs-framework-viewsfa-5-37c"
   },
   "/docs/mdx": {
     "component": "component---theme-doc-item-178-a40",

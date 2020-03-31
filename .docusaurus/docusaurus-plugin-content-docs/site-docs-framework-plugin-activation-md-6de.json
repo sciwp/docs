@@ -1,0 +1,18 @@
+{
+  "id": "framework/plugin-activation",
+  "title": "Plugin Activation",
+  "description": "SCIWP includes an **Activation Service** where you can check the PHP and the WordPress version and allow or disallow the plugin installation if it does not meet the requirements. You can also add checks for plugin dependencies and add custom activation rules and messages.\r",
+  "source": "@site/docs\\framework\\plugin-activation.md",
+  "permalink": "/docs/framework/plugin-activation",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/plugin-activation.md",
+  "sidebar_label": "Plugin Activation",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Addons Plugins",
+    "permalink": "/docs/framework/addon-plugins"
+  },
+  "next": {
+    "title": "Plugin Deactivation",
+    "permalink": "/docs/framework/plugin-deactivation"
+  }
+}

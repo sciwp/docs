@@ -1,0 +1,18 @@
+{
+  "id": "framework-provider-manager",
+  "title": "Providers",
+  "description": "The defined providers allow to manage class dependencies referenced when performing dependency injection. The dependency injection architecture allows to define class dependences in the constructor, so instances for those dependencies are automatically created. Providers allow to configure the creation of those instances.\r",
+  "source": "@site/docs\\framework-providers.md",
+  "permalink": "/docs/framework-provider-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-providers.md",
+  "sidebar_label": "Providers",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Template Service",
+    "permalink": "/docs/framework-template-service"
+  },
+  "next": {
+    "title": "Routes",
+    "permalink": "/docs/framework-route-manager"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "framework-prologue",
+  "title": "Prologue",
+  "description": "SCIWP Framework allows to follow a typical MVC architecture in WordPress plugin development, including many functionalities which can be usually found in most popular MVC PHP Frameworks, like routing, autoloading or dependency injection.\r",
+  "source": "@site/docs\\framework-prologue.md",
+  "permalink": "/docs/framework-prologue",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-prologue.md",
+  "sidebar_label": "Prologue",
+  "sidebar": "frameworkSidebar",
+  "next": {
+    "title": "Contribution",
+    "permalink": "/docs/framework-contribution"
+  }
+}

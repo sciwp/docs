@@ -1,0 +1,18 @@
+{
+  "id": "framework-template-service",
+  "title": "Template Service",
+  "description": "SCIWP includes a template service. An instance of this service will be attached to each plugin using the the framework. This service is in charge of parsing the templates defined in the config file of each plugin, and it also provides other functionalities.\r",
+  "source": "@site/docs\\framework-template-service.md",
+  "permalink": "/docs/framework-template-service",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-template-service.md",
+  "sidebar_label": "Template Service",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Templates",
+    "permalink": "/docs/framework-template-manager"
+  },
+  "next": {
+    "title": "Providers",
+    "permalink": "/docs/framework-provider-manager"
+  }
+}

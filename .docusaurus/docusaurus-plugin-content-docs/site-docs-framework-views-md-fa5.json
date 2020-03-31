@@ -1,0 +1,18 @@
+{
+  "id": "framework/views",
+  "title": "Views",
+  "description": "As with any other framework, the purpose of views is to print or return contents, keeping a logical separation between business logical and front end design.\r",
+  "source": "@site/docs\\framework\\views.md",
+  "permalink": "/docs/framework/views",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/views.md",
+  "sidebar_label": "Views",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Service Providers",
+    "permalink": "/docs/framework/providers"
+  },
+  "next": {
+    "title": "Templates",
+    "permalink": "/docs/framework/templates"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "id": "framework-plugin-manager",
-  "title": "Plugins",
+  "title": "Plugin",
   "description": "The Plugin Manager **_Sci\\Manager\\PluginManager_**, is the component used by the framework to manage the plugins. All plugin instances created should be registered within the PluginManager.\r",
   "source": "@site/docs\\plugin-manager.md",
   "permalink": "/docs/framework-plugin-manager",

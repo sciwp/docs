@@ -8,8 +8,8 @@
   "sidebar_label": "Models",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Dectivation",
-    "permalink": "/docs/framework-deactivation"
+    "title": "Template Service",
+    "permalink": "/docs/framework-template-service"
   },
   "next": {
     "title": "Model Queries",

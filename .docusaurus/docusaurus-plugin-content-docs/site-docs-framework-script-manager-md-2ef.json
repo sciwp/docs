@@ -1,0 +1,18 @@
+{
+  "id": "framework-script-manager",
+  "title": "Scripts",
+  "description": "WordPress already offer a way to inject styles into the website header. It also offers a way to inject script both in the header or at the bottom. However it requires to create a new method where you register and enqueue the files. With SCIWP you can add new css files and scripts by just using one line of code, so you don't need to create additional methods.\r",
+  "source": "@site/docs\\framework-script-manager.md",
+  "permalink": "/docs/framework-script-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-script-manager.md",
+  "sidebar_label": "Scripts",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Rest Routes",
+    "permalink": "/docs/framework-rest-manager"
+  },
+  "next": {
+    "title": "Styles",
+    "permalink": "/docs/framework-style-manager"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "framework/managers",
+  "title": "Managers",
+  "description": "Managers are the core components of the framework. You will not need to use them directly, but you can have a read in case you want to extend the framework or if you want to know more about how the framework works.",
+  "source": "@site/docs\\framework\\managers.md",
+  "permalink": "/docs/framework/managers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/managers.md",
+  "sidebar_label": "Managers"
+}

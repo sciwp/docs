@@ -1,0 +1,18 @@
+{
+  "id": "framework/basics",
+  "title": "Basics",
+  "description": "SCIWP framework architecture is divided into different componentes: The core class, the autoloader, the service container and the core componentes. In this section are covered the basic aspects of all of them.\r",
+  "source": "@site/docs\\framework\\basics.md",
+  "permalink": "/docs/framework/basics",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/basics.md",
+  "sidebar_label": "Basics",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/framework/configuration"
+  },
+  "next": {
+    "title": "Autoloader",
+    "permalink": "/docs/framework/autoloader"
+  }
+}

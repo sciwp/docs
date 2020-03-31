@@ -1,0 +1,18 @@
+{
+  "id": "framework/templates",
+  "title": "Templates",
+  "description": "Template files are usually added in WordPress themes for the different post types available. A WordPress default template consist in a `.php` file located in the active theme folder. However with SCIWP you can also bundle templates with your plugins.\r",
+  "source": "@site/docs\\framework\\templates.md",
+  "permalink": "/docs/framework/templates",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/templates.md",
+  "sidebar_label": "Templates",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Views",
+    "permalink": "/docs/framework/views"
+  },
+  "next": {
+    "title": "Assets",
+    "permalink": "/docs/framework/assets"
+  }
+}

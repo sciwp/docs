@@ -1,0 +1,18 @@
+{
+  "id": "framework/autoloader",
+  "title": "Autoloader",
+  "description": "The Autoloader is responsible for including the referenced classes. This component is used by both the plugins created with the framework and the framework itself, also allowing the use of **namespaces**, which should be a must when building plugins for any application.",
+  "source": "@site/docs\\framework\\autoloader.md",
+  "permalink": "/docs/framework/autoloader",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/autoloader.md",
+  "sidebar_label": "Autoloader",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Basics",
+    "permalink": "/docs/framework/basics"
+  },
+  "next": {
+    "title": "Dependencies",
+    "permalink": "/docs/framework/dependencies"
+  }
+}

@@ -1,6 +1,6 @@
 {
   "docsSidebars": {
-    "someSidebar": [
+    "frameworkSidebar": [
       {
         "type": "category",
         "label": "Introduction",
@@ -8,12 +8,12 @@
           {
             "type": "link",
             "label": "Prologue",
-            "href": "/docs/framework-prologue"
+            "href": "/docs/framework/prologue"
           },
           {
             "type": "link",
             "label": "Contribution",
-            "href": "/docs/framework-contribution"
+            "href": "/docs/framework/contribution"
           }
         ]
       },
@@ -24,12 +24,12 @@
           {
             "type": "link",
             "label": "Installation",
-            "href": "/docs/framework-install"
+            "href": "/docs/framework/installation"
           },
           {
             "type": "link",
             "label": "Configuration",
-            "href": "/docs/framework-configuration"
+            "href": "/docs/framework/configuration"
           }
         ]
       },
@@ -40,64 +40,91 @@
           {
             "type": "link",
             "label": "Basics",
-            "href": "/docs/framework-basics"
+            "href": "/docs/framework/basics"
           },
           {
             "type": "link",
             "label": "Autoloader",
-            "href": "/docs/framework-autoloader"
+            "href": "/docs/framework/autoloader"
           },
           {
             "type": "link",
             "label": "Dependencies",
-            "href": "/docs/framework-dependencies"
+            "href": "/docs/framework/dependencies"
           }
         ]
       },
       {
         "type": "category",
-        "label": "Components",
+        "label": "Plugins",
         "items": [
           {
             "type": "link",
             "label": "Plugins",
-            "href": "/docs/framework-plugin-manager"
+            "href": "/docs/framework/plugins"
           },
           {
             "type": "link",
-            "label": "Routes",
-            "href": "/docs/framework-route-manager"
+            "label": "Addon Plugins",
+            "href": "/docs/framework/addon-plugins"
           },
           {
             "type": "link",
-            "label": "Rest Routes",
-            "href": "/docs/framework-rest-manager"
+            "label": "Plugin Activation",
+            "href": "/docs/framework/plugin-activation"
           },
           {
             "type": "link",
-            "label": "Templates",
-            "href": "/docs/framework-template-manager"
-          },
-          {
-            "type": "link",
-            "label": "Providers",
-            "href": "/docs/framework-provider-manager"
+            "label": "Plugin Dectivation",
+            "href": "/docs/framework/plugin-deactivation"
           }
         ]
       },
       {
         "type": "category",
-        "label": "Extensions",
+        "label": "Routes",
         "items": [
           {
             "type": "link",
-            "label": "Activation",
-            "href": "/docs/framework-activation"
+            "label": "Routes",
+            "href": "/docs/framework/routes"
           },
           {
             "type": "link",
-            "label": "Dectivation",
-            "href": "/docs/framework-deactivation"
+            "label": "Rest Routes",
+            "href": "/docs/framework/rest"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Services",
+        "items": [
+          {
+            "type": "link",
+            "label": "Service Providers",
+            "href": "/docs/framework/providers"
+          }
+        ]
+      },
+      {
+        "type": "category",
+        "label": "Frontend",
+        "items": [
+          {
+            "type": "link",
+            "label": "Views",
+            "href": "/docs/framework/views"
+          },
+          {
+            "type": "link",
+            "label": "Templates",
+            "href": "/docs/framework/templates"
+          },
+          {
+            "type": "link",
+            "label": "Assets",
+            "href": "/docs/framework/assets"
           }
         ]
       },
@@ -108,12 +135,12 @@
           {
             "type": "link",
             "label": "Models",
-            "href": "/docs/framework-models"
+            "href": "/docs/framework/models"
           },
           {
             "type": "link",
             "label": "Model Queries",
-            "href": "/docs/framework-model-queries"
+            "href": "/docs/framework/model-queries"
           }
         ]
       },
@@ -125,21 +152,24 @@
     ]
   },
   "permalinkToSidebar": {
-    "/docs/framework-activation": "someSidebar",
-    "/docs/framework-autoloader": "someSidebar",
-    "/docs/framework-basics": "someSidebar",
-    "/docs/framework-configuration": "someSidebar",
-    "/docs/framework-contribution": "someSidebar",
-    "/docs/framework-deactivation": "someSidebar",
-    "/docs/framework-dependencies": "someSidebar",
-    "/docs/framework-install": "someSidebar",
-    "/docs/framework-model-queries": "someSidebar",
-    "/docs/framework-models": "someSidebar",
-    "/docs/framework-plugin-manager": "someSidebar",
-    "/docs/framework-prologue": "someSidebar",
-    "/docs/framework-provider-manager": "someSidebar",
-    "/docs/framework-rest-manager": "someSidebar",
-    "/docs/framework-route-manager": "someSidebar",
-    "/docs/framework-template-manager": "someSidebar"
+    "/docs/framework/addon-plugins": "frameworkSidebar",
+    "/docs/framework/assets": "frameworkSidebar",
+    "/docs/framework/autoloader": "frameworkSidebar",
+    "/docs/framework/basics": "frameworkSidebar",
+    "/docs/framework/configuration": "frameworkSidebar",
+    "/docs/framework/contribution": "frameworkSidebar",
+    "/docs/framework/dependencies": "frameworkSidebar",
+    "/docs/framework/installation": "frameworkSidebar",
+    "/docs/framework/model-queries": "frameworkSidebar",
+    "/docs/framework/models": "frameworkSidebar",
+    "/docs/framework/plugin-activation": "frameworkSidebar",
+    "/docs/framework/plugin-deactivation": "frameworkSidebar",
+    "/docs/framework/plugins": "frameworkSidebar",
+    "/docs/framework/prologue": "frameworkSidebar",
+    "/docs/framework/providers": "frameworkSidebar",
+    "/docs/framework/rest": "frameworkSidebar",
+    "/docs/framework/routes": "frameworkSidebar",
+    "/docs/framework/templates": "frameworkSidebar",
+    "/docs/framework/views": "frameworkSidebar"
   }
 }

@@ -1,0 +1,18 @@
+{
+  "id": "framework/dependencies",
+  "title": "Dependencies",
+  "description": "Dependency management is done through the service container in the same way as in other frameworks. This allows to perform dependency injection and bind interfaces to implementations or class constructors to existing instances.\r",
+  "source": "@site/docs\\framework\\dependencies.md",
+  "permalink": "/docs/framework/dependencies",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/dependencies.md",
+  "sidebar_label": "Dependencies",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Autoloader",
+    "permalink": "/docs/framework/autoloader"
+  },
+  "next": {
+    "title": "Plugins",
+    "permalink": "/docs/framework/plugins"
+  }
+}

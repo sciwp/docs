@@ -1,0 +1,18 @@
+{
+  "id": "framework/template-service",
+  "title": "Template Service",
+  "description": "",
+  "source": "@site/docs\\framework\\template-service.md",
+  "permalink": "/docs/framework/template-service",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/template-service.md",
+  "sidebar_label": "Template Service",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Templates",
+    "permalink": "/docs/framework/templates"
+  },
+  "next": {
+    "title": "Scripts",
+    "permalink": "/docs/framework/script-manager"
+  }
+}

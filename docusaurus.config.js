@@ -8,13 +8,13 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'SCIWP',
+      title: 'Home',
       logo: {
-        alt: 'SCIWP Logo',
+        alt: 'Home',
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/framework-install', label: 'Framework Documentation', position: 'left'},
+        {to: 'docs/framework/prologue', label: 'Framework Documentation', position: 'left'},
         //{to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
         //{to: 'blog', label: 'Blog', position: 'left'},
         {
@@ -44,7 +44,7 @@ module.exports = {
             },*/
             {
               label: 'Framework',
-              to: 'docs/framework-prologue',
+              to: 'docs/framework/prologue',
             },
           ],
         },

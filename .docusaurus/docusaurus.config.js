@@ -4,14 +4,14 @@ export default {
   "customFields": {},
   "themeConfig": {
     "navbar": {
-      "title": "SCIWP",
+      "title": "Home",
       "logo": {
-        "alt": "SCIWP Logo",
+        "alt": "Home",
         "src": "img/logo.svg"
       },
       "links": [
         {
-          "to": "docs/framework-install",
+          "to": "docs/framework/prologue",
           "label": "Framework Documentation",
           "position": "left"
         },
@@ -30,7 +30,7 @@ export default {
           "items": [
             {
               "label": "Framework",
-              "to": "docs/framework-prologue"
+              "to": "docs/framework/prologue"
             }
           ]
         },

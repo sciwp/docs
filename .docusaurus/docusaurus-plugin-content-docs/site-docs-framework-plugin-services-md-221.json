@@ -1,0 +1,9 @@
+{
+  "id": "framework/plugin-services",
+  "title": "Plugin Services",
+  "description": "",
+  "source": "@site/docs\\framework\\plugin-services.md",
+  "permalink": "/docs/framework/plugin-services",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/plugin-services.md",
+  "sidebar_label": "Plugin Services"
+}

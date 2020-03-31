@@ -1,0 +1,18 @@
+{
+  "id": "framework-route-manager",
+  "title": "Routes",
+  "description": "With Sciwp you can define routes in the same way you would define them with any other framework. The routes usually match a file, a function or a controller's class method, which is in charge of parsing the incoming data and provide a response.\r",
+  "source": "@site/docs\\framework-routes.md",
+  "permalink": "/docs/framework-route-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-routes.md",
+  "sidebar_label": "Routes",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Providers",
+    "permalink": "/docs/framework-provider-manager"
+  },
+  "next": {
+    "title": "Rest Routes",
+    "permalink": "/docs/framework-rest-manager"
+  }
+}

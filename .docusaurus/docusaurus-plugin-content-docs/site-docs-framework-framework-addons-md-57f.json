@@ -1,0 +1,18 @@
+{
+  "id": "framework/framework-addons",
+  "title": "Addon Plugins",
+  "description": "In previous sections you learned how to include SCIWP in your plugin. However once configured the framework it can be used with any other plugin you create with almost zero configuration.\r",
+  "source": "@site/docs\\framework\\framework-addons.md",
+  "permalink": "/docs/framework/framework-addons",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/framework-addons.md",
+  "sidebar_label": "Addon Plugins",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/framework-configuration"
+  },
+  "next": {
+    "title": "Basics",
+    "permalink": "/docs/framework-basics"
+  }
+}

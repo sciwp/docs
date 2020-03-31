@@ -1,0 +1,18 @@
+{
+  "id": "framework/plugin-manager",
+  "title": "The Plugin Manager",
+  "description": "The Plugin Manager is a core component of the framework which is used to store the registed plugins. It contains the methods which allow to register plugin instances and get them.\r",
+  "source": "@site/docs\\framework\\plugin-manager.md",
+  "permalink": "/docs/framework/plugin-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/plugin-manager.md",
+  "sidebar_label": "Plugin Manager",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Dependencies",
+    "permalink": "/docs/framework/dependencies"
+  },
+  "next": {
+    "title": "Plugins",
+    "permalink": "/docs/framework/plugins"
+  }
+}

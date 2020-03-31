@@ -1,0 +1,18 @@
+{
+  "id": "framework-more-plugins",
+  "title": "Addons",
+  "description": "",
+  "source": "@site/docs\\framework-more-plugins.md",
+  "permalink": "/docs/framework-more-plugins",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-more-plugins.md",
+  "sidebar_label": "Addon Plugins",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Configuration",
+    "permalink": "/docs/framework-configuration"
+  },
+  "next": {
+    "title": "Basics",
+    "permalink": "/docs/framework-basics"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "framework-asset-manager",
+  "title": "Assets",
+  "description": "WordPress already offer a way to inject styles into the website header. It also offers a way to inject script both in the header or at the bottom. However it requires to create a new method where you register and enqueue the files. With SCIWP you can add new css files and scripts by just using one line of code, so you don't need to create additional methods.\r",
+  "source": "@site/docs\\framework-asset-manager.md",
+  "permalink": "/docs/framework-asset-manager",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-asset-manager.md",
+  "sidebar_label": "Assets",
+  "sidebar": "someSidebar",
+  "previous": {
+    "title": "Templates",
+    "permalink": "/docs/framework-template-manager"
+  },
+  "next": {
+    "title": "Providers",
+    "permalink": "/docs/framework-provider-manager"
+  }
+}

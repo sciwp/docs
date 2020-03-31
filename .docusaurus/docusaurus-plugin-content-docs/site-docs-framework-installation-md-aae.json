@@ -1,0 +1,18 @@
+{
+  "id": "framework/installation",
+  "title": "Installation",
+  "description": "In this section you will find how to install the framework and get started with it. It might look long because there are some considerations to explain, but in most cases it's just matter of writing **three lines of code**.",
+  "source": "@site/docs\\framework\\installation.md",
+  "permalink": "/docs/framework/installation",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/installation.md",
+  "sidebar_label": "Installation",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Contribution",
+    "permalink": "/docs/framework/contribution"
+  },
+  "next": {
+    "title": "Configuration",
+    "permalink": "/docs/framework/configuration"
+  }
+}

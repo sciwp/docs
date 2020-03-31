@@ -8,7 +8,7 @@
   "sidebar_label": "Routes",
   "sidebar": "someSidebar",
   "previous": {
-    "title": "Plugins",
+    "title": "Plugin",
     "permalink": "/docs/framework-plugin-manager"
   },
   "next": {
