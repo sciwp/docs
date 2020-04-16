@@ -1,0 +1,18 @@
+{
+  "id": "framework/database-queries",
+  "title": "Database Queries",
+  "description": "> **Please note**: If you bundle the framework with your Plugin,\r",
+  "source": "@site/docs\\framework\\database-queries.md",
+  "permalink": "/docs/framework/database-queries",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/database-queries.md",
+  "sidebar_label": "Database Queries",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Model Queries",
+    "permalink": "/docs/framework/model-queries"
+  },
+  "next": {
+    "title": "Collections",
+    "permalink": "/docs/framework/collections"
+  }
+}

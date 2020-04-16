@@ -7,14 +7,13 @@
 
 module.exports = {
   frameworkSidebar: {
-    'Introduction': ['framework/prologue', 'framework/contribution'],
-    'Getting Started': ['framework/installation', 'framework/configuration'],
-    'Architecture': ['framework/basics', 'framework/autoloader', 'framework/dependencies'],
-    'Plugins': ['framework/plugins', 'framework/addon-plugins', 'framework/plugin-activation', 'framework/plugin-deactivation'],
-    'Routes': ['framework/routes', 'framework/rest' ],
-    'Services': ['framework/providers' ],
-    'Frontend': ['framework/views', 'framework/templates', 'framework/assets'],
-    'Database': ['framework/models', 'framework/model-queries'],
-    'Structures': [/*'framework-collections'*/], 
+    'Introduction': ['prologue', 'contribution'],
+    'Getting Started': ['installation', 'autoloader', 'configuration'],
+    'Architecture': ['basics', 'dependencies', 'providers'],
+    'Plugins': ['plugins', 'plugin-options', 'plugin-activation', 'plugin-deactivation'],
+    'Router': ['routes', 'rest', 'request'],
+    'Frontend': ['views', 'assets', 'templates'],
+    'Database': ['models', 'queries'],
+    'Support': ['collections', 'helpers'], 
   },
 };

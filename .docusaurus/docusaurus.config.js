@@ -1,5 +1,18 @@
 export default {
-  "plugins": [],
+  "plugins": [
+    [
+      "@docusaurus/plugin-content-blog",
+      {
+        "path": "tutorials",
+        "routeBasePath": "tutorials",
+        "include": [
+          "*.md",
+          "*.mdx"
+        ]
+      }
+    ],
+    "@docusaurus/plugin-content-pages"
+  ],
   "themes": [],
   "customFields": {},
   "themeConfig": {
@@ -11,8 +24,18 @@ export default {
       },
       "links": [
         {
-          "to": "docs/framework/prologue",
-          "label": "Framework Documentation",
+          "to": "docs/prologue",
+          "label": "Documentation",
+          "position": "left"
+        },
+        {
+          "to": "tutorials",
+          "label": "Tutorials",
+          "position": "left"
+        },
+        {
+          "to": "blog",
+          "label": "Contact",
           "position": "left"
         },
         {
@@ -56,8 +79,8 @@ export default {
       "copyright": "Built by Eduardo Lázaro Rodríguez with Docusaurus"
     }
   },
-  "title": "SciWP",
-  "tagline": "A MVC framework to create plugins for WordPress",
+  "title": "CREATE MVC PLUGINS FOR WORDPRESS",
+  "tagline": "- The Framework of Choice of Mad Sciencists -",
   "url": "https://sciwp.com",
   "baseUrl": "/",
   "favicon": "img/favicon.ico",

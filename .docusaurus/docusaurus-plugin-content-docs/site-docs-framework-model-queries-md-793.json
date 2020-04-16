@@ -10,5 +10,9 @@
   "previous": {
     "title": "Models",
     "permalink": "/docs/framework/models"
+  },
+  "next": {
+    "title": "Database Queries",
+    "permalink": "/docs/framework/database-queries"
   }
 }

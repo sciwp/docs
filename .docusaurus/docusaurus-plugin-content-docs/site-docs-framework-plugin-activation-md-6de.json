@@ -8,8 +8,8 @@
   "sidebar_label": "Plugin Activation",
   "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Addons Plugins",
-    "permalink": "/docs/framework/addon-plugins"
+    "title": "Plugins",
+    "permalink": "/docs/framework/plugins"
   },
   "next": {
     "title": "Plugin Deactivation",

@@ -12,7 +12,7 @@
     "permalink": "/docs/framework/routes"
   },
   "next": {
-    "title": "Service Providers",
-    "permalink": "/docs/framework/providers"
+    "title": "Views",
+    "permalink": "/docs/framework/views"
   }
 }

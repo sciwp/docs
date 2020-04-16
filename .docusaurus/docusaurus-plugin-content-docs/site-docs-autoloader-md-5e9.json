@@ -1,18 +1,18 @@
 {
-  "id": "framework-autoloader",
+  "id": "autoloader",
   "title": "Autoloader",
-  "description": "The Autoloader is responsible for including the referenced classes. This component is used by both the plugins created with the framework and the framework itself, also allowing the use of **namespaces**, which should be a must when building plugins for any application.",
+  "description": "The Autoloader is responsible for including the referenced classes when they are needed. It's still common in WordPress to require all the class files at the beginning of the files. However you should not follow that practive when using this framework.",
   "source": "@site/docs\\autoloader.md",
-  "permalink": "/docs/framework-autoloader",
+  "permalink": "/docs/autoloader",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/autoloader.md",
   "sidebar_label": "Autoloader",
-  "sidebar": "someSidebar",
+  "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Basics",
-    "permalink": "/docs/framework-basics"
+    "title": "Installation",
+    "permalink": "/docs/installation"
   },
   "next": {
-    "title": "Dependencies",
-    "permalink": "/docs/framework-dependencies"
+    "title": "Configuration",
+    "permalink": "/docs/configuration"
   }
 }

@@ -8,8 +8,8 @@
   "sidebar_label": "Models",
   "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Assets",
-    "permalink": "/docs/framework/assets"
+    "title": "Templates",
+    "permalink": "/docs/framework/templates"
   },
   "next": {
     "title": "Model Queries",

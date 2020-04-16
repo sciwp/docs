@@ -1,0 +1,18 @@
+{
+  "id": "collections",
+  "title": "Collections",
+  "description": "Collections are sets of elements organized in an array format. Collections include some methods to make easier data management.\r",
+  "source": "@site/docs\\collections.md",
+  "permalink": "/docs/collections",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/collections.md",
+  "sidebar_label": "Collections",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Queries",
+    "permalink": "/docs/queries"
+  },
+  "next": {
+    "title": "Helpers",
+    "permalink": "/docs/helpers"
+  }
+}

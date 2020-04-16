@@ -1,0 +1,9 @@
+{
+  "id": "table-queries",
+  "title": "Table Queries",
+  "description": "> **Please note**: If you bundle the framework with your Plugin,\r",
+  "source": "@site/docs\\table-queries.md",
+  "permalink": "/docs/table-queries",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/table-queries.md",
+  "sidebar_label": "Table Queries"
+}

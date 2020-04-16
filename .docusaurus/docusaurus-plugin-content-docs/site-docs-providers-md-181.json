@@ -1,0 +1,18 @@
+{
+  "id": "providers",
+  "title": "Service Providers",
+  "description": "The defined providers allow to execute tasks when the plugins using the framework boot. If you want to define class bindings, providers are probably the best place. Also, if you want to create a post type, you can do it in a service, which can be called from any code wich is executed when the plugin is loaded, or also from a service provider.\r",
+  "source": "@site/docs\\providers.md",
+  "permalink": "/docs/providers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/providers.md",
+  "sidebar_label": "Service Providers",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Dependencies",
+    "permalink": "/docs/dependencies"
+  },
+  "next": {
+    "title": "Plugins",
+    "permalink": "/docs/plugins"
+  }
+}

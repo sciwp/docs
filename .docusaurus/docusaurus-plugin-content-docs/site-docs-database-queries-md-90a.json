@@ -1,0 +1,9 @@
+{
+  "id": "database-queries",
+  "title": "Database Queries",
+  "description": "You can perform some advanced queries into any database table or directoy into any model.\r",
+  "source": "@site/docs\\database-queries.md",
+  "permalink": "/docs/database-queries",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/database-queries.md",
+  "sidebar_label": "Database Queries"
+}

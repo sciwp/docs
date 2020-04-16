@@ -1,0 +1,18 @@
+{
+  "id": "plugin-options",
+  "title": "Plugin Options",
+  "description": "SCI WP includes an **Option Service**. This service is an interface which allows to manage options for each plugin. Plugin options are stored in JSON format in a single database field, under the `wp_options` table. This allows to keep database ordered, avoiding the use of many fields, which would consume more resources.\r",
+  "source": "@site/docs\\plugin-options.md",
+  "permalink": "/docs/plugin-options",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/plugin-options.md",
+  "sidebar_label": "Plugin Options",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Plugins",
+    "permalink": "/docs/plugins"
+  },
+  "next": {
+    "title": "Plugin Activation",
+    "permalink": "/docs/plugin-activation"
+  }
+}

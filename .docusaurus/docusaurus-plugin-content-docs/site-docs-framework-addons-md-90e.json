@@ -1,7 +1,7 @@
 {
   "id": "framework/addon-plugins",
   "title": "Addons Plugins",
-  "description": "In previous sections you learned how to register you plugin with SCIWP. However once the framework is configured it can be used with any other plugin you create with almost zero configuration.\r",
+  "description": "In previous sections you learned how to register you plugin with MVC WP. However once the framework is configured it can be used with any other plugin you create with almost zero configuration.\r",
   "source": "@site/docs\\framework\\addons.md",
   "permalink": "/docs/framework/addon-plugins",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/addons.md",

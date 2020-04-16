@@ -1,18 +1,18 @@
 {
   "id": "framework/providers",
   "title": "Service Providers",
-  "description": "The defined providers allow to manage class dependencies referenced when performing dependency injection. The dependency injection architecture allows to define class dependences in the constructor, so instances for those dependencies are automatically created. Providers allow to configure the creation of those instances.\r",
+  "description": "The defined providers allow to execute tasks when the plugins using the framework boot. If you want to define class bindings, providers are probably the best place. Also, if you want to create a post type, you can do it in a service, which can be called from any code wich is executed when the plugin is loaded, or also from a service provider.\r",
   "source": "@site/docs\\framework\\providers.md",
   "permalink": "/docs/framework/providers",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/providers.md",
   "sidebar_label": "Service Providers",
   "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Rest Routes",
-    "permalink": "/docs/framework/rest"
+    "title": "Dependencies",
+    "permalink": "/docs/framework/dependencies"
   },
   "next": {
-    "title": "Views",
-    "permalink": "/docs/framework/views"
+    "title": "Plugins",
+    "permalink": "/docs/framework/plugins"
   }
 }

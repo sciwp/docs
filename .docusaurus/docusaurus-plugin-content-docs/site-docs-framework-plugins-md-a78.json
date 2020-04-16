@@ -1,18 +1,18 @@
 {
   "id": "framework/plugins",
   "title": "Plugins",
-  "description": "The **Plugin Manager** `Sci\\Manager\\PluginManager`, is the component used by the framework to manage the plugins. All plugin instances created should be registered within the **Plugin Manager**.\r",
+  "description": "The **Plugin Manager**, is the component used by the framework to manage the plugins. All plugin instances created should be registered within the **Plugin Manager**. The full namespace of the **Provider Manager** is  **Sci\\Plugin\\Managers\\PluginManager**.\r",
   "source": "@site/docs\\framework\\plugins.md",
   "permalink": "/docs/framework/plugins",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/plugins.md",
   "sidebar_label": "Plugins",
   "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Dependencies",
-    "permalink": "/docs/framework/dependencies"
+    "title": "Service Providers",
+    "permalink": "/docs/framework/providers"
   },
   "next": {
-    "title": "Addons Plugins",
-    "permalink": "/docs/framework/addon-plugins"
+    "title": "Plugin Activation",
+    "permalink": "/docs/framework/plugin-activation"
   }
 }

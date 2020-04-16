@@ -1,7 +1,7 @@
 {
   "id": "framework/plugin-services",
   "title": "Plugin Services",
-  "description": "",
+  "description": "> **Please note**: If you bundle the framework with your Plugin,\r",
   "source": "@site/docs\\framework\\plugin-services.md",
   "permalink": "/docs/framework/plugin-services",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/plugin-services.md",

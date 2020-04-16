@@ -8,11 +8,11 @@
   "sidebar_label": "Templates",
   "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Views",
-    "permalink": "/docs/framework/views"
-  },
-  "next": {
     "title": "Assets",
     "permalink": "/docs/framework/assets"
+  },
+  "next": {
+    "title": "Models",
+    "permalink": "/docs/framework/models"
   }
 }

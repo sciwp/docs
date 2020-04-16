@@ -1,7 +1,7 @@
 {
   "id": "sciwp-rest-manager",
   "title": "Rest Manager",
-  "description": "With SCIWP you can define REST API routes in the same way you would define standard routes. REST routes usually match a file, a function or a controller's class method, which is in charge of parsing the incoming data and provide a response.\r",
+  "description": "With MVC WP you can define REST API routes in the same way you would define standard routes. REST routes usually match a file, a function or a controller's class method, which is in charge of parsing the incoming data and provide a response.\r",
   "source": "@site/docs\\2-rest-manager.md",
   "permalink": "/docs/sciwp-rest-manager",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/2-rest-manager.md",

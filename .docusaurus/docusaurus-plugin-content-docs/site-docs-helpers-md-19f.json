@@ -1,0 +1,14 @@
+{
+  "id": "helpers",
+  "title": "Helpers",
+  "description": "Helpers are classes with sets of static methods used to provide support for some tasks, like managing arrays, managing strings or parsing query strings.\r",
+  "source": "@site/docs\\helpers.md",
+  "permalink": "/docs/helpers",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/helpers.md",
+  "sidebar_label": "Helpers",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Collections",
+    "permalink": "/docs/collections"
+  }
+}

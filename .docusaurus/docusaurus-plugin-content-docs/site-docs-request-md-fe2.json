@@ -1,0 +1,18 @@
+{
+  "id": "request",
+  "title": "Request",
+  "description": "The Request class allows to get the parameters specified in the routes. You can get them, from any funciton or controller.\r",
+  "source": "@site/docs\\request.md",
+  "permalink": "/docs/request",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/request.md",
+  "sidebar_label": "Request",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Rest Routes",
+    "permalink": "/docs/rest"
+  },
+  "next": {
+    "title": "Views",
+    "permalink": "/docs/views"
+  }
+}

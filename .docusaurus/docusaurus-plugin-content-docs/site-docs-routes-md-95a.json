@@ -1,0 +1,18 @@
+{
+  "id": "routes",
+  "title": "HTTP Routes",
+  "description": "With Sciwp you can define routes in the same way you would define them with any other framework. The routes usually match a file, a function or a controller's class method, which is in charge of parsing the incoming data and provide a response.\r",
+  "source": "@site/docs\\routes.md",
+  "permalink": "/docs/routes",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/routes.md",
+  "sidebar_label": "HTTP Routes",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Plugin Deactivation",
+    "permalink": "/docs/plugin-deactivation"
+  },
+  "next": {
+    "title": "Rest Routes",
+    "permalink": "/docs/rest"
+  }
+}

@@ -8,11 +8,11 @@
   "sidebar_label": "Dependencies",
   "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Autoloader",
-    "permalink": "/docs/framework/autoloader"
+    "title": "Basics",
+    "permalink": "/docs/framework/basics"
   },
   "next": {
-    "title": "Plugins",
-    "permalink": "/docs/framework/plugins"
+    "title": "Service Providers",
+    "permalink": "/docs/framework/providers"
   }
 }

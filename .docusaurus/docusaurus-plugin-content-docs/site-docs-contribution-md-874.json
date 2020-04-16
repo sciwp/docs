@@ -1,18 +1,18 @@
 {
-  "id": "framework-contribution",
+  "id": "contribution",
   "title": "Contribution",
   "description": "In a brief, any user can create pull requests or open bug reports. That will allow to improve the framework and add new features so it's useful for more people.\r",
   "source": "@site/docs\\contribution.md",
-  "permalink": "/docs/framework-contribution",
+  "permalink": "/docs/contribution",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/contribution.md",
   "sidebar_label": "Contribution",
-  "sidebar": "someSidebar",
+  "sidebar": "frameworkSidebar",
   "previous": {
     "title": "Prologue",
-    "permalink": "/docs/framework-prologue"
+    "permalink": "/docs/prologue"
   },
   "next": {
     "title": "Installation",
-    "permalink": "/docs/framework-install"
+    "permalink": "/docs/installation"
   }
 }

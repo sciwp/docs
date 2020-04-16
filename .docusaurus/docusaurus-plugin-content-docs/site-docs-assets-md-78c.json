@@ -1,0 +1,18 @@
+{
+  "id": "assets",
+  "title": "Assets",
+  "description": "WordPress already offers a way to inject styles into the website header. It also offers a way to inject scripts both in the header or at the bottom of your website. However it requires to create a new method where you register and enqueue the files. With SCI WP you can add new css files and scripts by just using one line of code, so you don't need to create additional functions.\r",
+  "source": "@site/docs\\assets.md",
+  "permalink": "/docs/assets",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/assets.md",
+  "sidebar_label": "Assets",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Views",
+    "permalink": "/docs/views"
+  },
+  "next": {
+    "title": "Templates",
+    "permalink": "/docs/templates"
+  }
+}

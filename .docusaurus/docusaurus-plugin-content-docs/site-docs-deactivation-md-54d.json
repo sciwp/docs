@@ -1,7 +1,7 @@
 {
   "id": "framework-deactivation",
   "title": "Dectivation",
-  "description": "SCIWP includes a deactivation service which allows to execute some custom actions when a plugin using the framework is disabled.\r",
+  "description": "MVC WP includes a deactivation service which allows to execute some custom actions when a plugin using the framework is disabled.\r",
   "source": "@site/docs\\deactivation.md",
   "permalink": "/docs/framework-deactivation",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/deactivation.md",

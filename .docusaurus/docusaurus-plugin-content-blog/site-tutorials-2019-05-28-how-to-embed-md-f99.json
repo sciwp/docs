@@ -1,0 +1,21 @@
+{
+  "permalink": "/tutorials/how-to-embed",
+  "source": "@site/tutorials\\2019-05-28-how-to-embed.md",
+  "description": "In previous sections you learned how to register you plugin with SCI MVC. However once the framework is configured it can be used with any other plugin you create with almost zero configuration.",
+  "date": "2019-05-28T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "hola",
+      "permalink": "/tutorials/tags/hola"
+    },
+    {
+      "label": "docusaurus",
+      "permalink": "/tutorials/tags/docusaurus"
+    }
+  ],
+  "title": "Hola",
+  "prevItem": {
+    "title": "Hello",
+    "permalink": "/tutorials/hello-world"
+  }
+}

@@ -12,7 +12,7 @@
     "permalink": "/docs/framework/contribution"
   },
   "next": {
-    "title": "Configuration",
-    "permalink": "/docs/framework/configuration"
+    "title": "Autoloader",
+    "permalink": "/docs/framework/autoloader"
   }
 }

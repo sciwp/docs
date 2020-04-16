@@ -1,14 +1,18 @@
 {
-  "id": "framework-model-queries",
-  "title": "Model Queries",
-  "description": "You can use the query method to start an advanced query with the model. The method will return the query itself so you can add condition after condition and get the results in the end.\r",
+  "id": "queries",
+  "title": "Queries",
+  "description": "You can perform some advanced queries into any database table or directoy into any model.\r",
   "source": "@site/docs\\model-queries.md",
-  "permalink": "/docs/framework-model-queries",
+  "permalink": "/docs/queries",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/model-queries.md",
-  "sidebar_label": "Model Queries",
-  "sidebar": "someSidebar",
+  "sidebar_label": "Queries",
+  "sidebar": "frameworkSidebar",
   "previous": {
     "title": "Models",
-    "permalink": "/docs/framework-models"
+    "permalink": "/docs/models"
+  },
+  "next": {
+    "title": "Collections",
+    "permalink": "/docs/collections"
   }
 }

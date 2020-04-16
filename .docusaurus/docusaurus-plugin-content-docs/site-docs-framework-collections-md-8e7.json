@@ -1,0 +1,14 @@
+{
+  "id": "framework/collections",
+  "title": "Collections",
+  "description": "> **Please note**: If you bundle the framework with your Plugin,\r",
+  "source": "@site/docs\\framework\\collections.md",
+  "permalink": "/docs/framework/collections",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/collections.md",
+  "sidebar_label": "Collections",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Database Queries",
+    "permalink": "/docs/framework/database-queries"
+  }
+}

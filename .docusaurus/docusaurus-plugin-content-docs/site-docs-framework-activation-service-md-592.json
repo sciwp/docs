@@ -1,7 +1,7 @@
 {
   "id": "framework/activation-service",
   "title": "Activation Service",
-  "description": "SCIWP includes an activation service where you can check the PHP and the WordPress version and allow or disallow the plugin installation if it does not meet the requirements. You can also add checks for plugin dependencies and add custom activation rules and messages.\r",
+  "description": "MVC WP includes an activation service where you can check the PHP and the WordPress version and allow or disallow the plugin installation if it does not meet the requirements. You can also add checks for plugin dependencies and add custom activation rules and messages.\r",
   "source": "@site/docs\\framework\\activation-service.md",
   "permalink": "/docs/framework/activation-service",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework/activation-service.md",

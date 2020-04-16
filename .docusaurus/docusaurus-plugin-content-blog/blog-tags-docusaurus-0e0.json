@@ -1,7 +1,7 @@
 {
-  "allTagsPath": "/blog/tags",
-  "slug": "docusaurus",
-  "name": "docusaurus",
+  "allTagsPath": "/tutorials/tags",
+  "slug": "tutorials",
+  "name": "tutorials",
   "count": 3,
-  "permalink": "/blog/tags/docusaurus"
+  "permalink": "/tutorials/tags/docusaurus"
 }

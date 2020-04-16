@@ -1,0 +1,25 @@
+{
+  "permalink": "/tutorials/hello-world",
+  "source": "@site/tutorials\\2019-05-29-hello-world.md",
+  "description": "Welcome to this blog. This blog is created with [**Docusaurus 2 alpha**](https://v2.docusaurus.io/).",
+  "date": "2019-05-29T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "hello",
+      "permalink": "/tutorials/tags/hello"
+    },
+    {
+      "label": "docusaurus",
+      "permalink": "/tutorials/tags/docusaurus"
+    }
+  ],
+  "title": "Hello",
+  "prevItem": {
+    "title": "Welcome",
+    "permalink": "/tutorials/welcome"
+  },
+  "nextItem": {
+    "title": "Hola",
+    "permalink": "/tutorials/how-to-embed"
+  }
+}

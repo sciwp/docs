@@ -8,11 +8,11 @@
   "sidebar_label": "Views",
   "sidebar": "frameworkSidebar",
   "previous": {
-    "title": "Service Providers",
-    "permalink": "/docs/framework/providers"
+    "title": "Rest Routes",
+    "permalink": "/docs/framework/rest"
   },
   "next": {
-    "title": "Templates",
-    "permalink": "/docs/framework/templates"
+    "title": "Assets",
+    "permalink": "/docs/framework/assets"
   }
 }

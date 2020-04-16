@@ -1,0 +1,18 @@
+{
+  "id": "plugin-deactivation",
+  "title": "Plugin Deactivation",
+  "description": "SCI WP includes a **Deactivation Service** which allows to execute some custom actions when a plugin using the framework is disabled.\r",
+  "source": "@site/docs\\plugin-deactivation.md",
+  "permalink": "/docs/plugin-deactivation",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/plugin-deactivation.md",
+  "sidebar_label": "Plugin Dectivation",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Plugin Activation",
+    "permalink": "/docs/plugin-activation"
+  },
+  "next": {
+    "title": "HTTP Routes",
+    "permalink": "/docs/routes"
+  }
+}

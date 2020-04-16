@@ -6,14 +6,48 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+
+const people = [
+  {
+    title: <>Easy to Use</>,
+    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    description: (
+      <>
+        Docusaurus was designed from the ground up to be easily installed and
+        used to get your website up and running quickly.
+      </>
+    ),
+  },
+  {
+    title: <>Focus on What Matters</>,
+    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    description: (
+      <>
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
+        ahead and move your docs into the <code>docs</code> directory.
+      </>
+    ),
+  },
+  {
+    title: <>Powered by React</>,
+    imageUrl: 'img/undraw_docusaurus_react.svg',
+    description: (
+      <>
+        Extend or customize your website layout by reusing React. Docusaurus can
+        be extended while reusing the same header and footer.
+      </>
+    ),
+  },
+];
+
 const features = [
   {
     title: <>Extremely simple to install</>,
     imageUrl: 'img/feature-install.png',
     description: (
       <>
-        <p>SCIWP Framework was designed te be easy to install and use. You just need to copy the SCIWP package into your Plugin directory and use it by just typing two lines of code. The framework will read WordPress Plugin data and configure namespaces for you. </p>
-        <p>Do you want to customize something? Just add a config file in the root folder of your Plugin. Complex? Just use the SCIWP Starter Template.</p>
+        <p>SCI WP Framework was designed te be easy to install and use. You just need to copy the SCI WP package into your Plugin directory and use it by just typing two lines of code. The framework will read WordPress Plugin data and configure namespaces for you. </p>
+        <p>Do you want to customize something? Just add a config file in the root folder of your Plugin. Complex? Just use the SCI WP Starter Template.</p>
       </>
     ),
   },
@@ -22,7 +56,7 @@ const features = [
     imageUrl: '/img/feature-models.png',
     description: (
       <>
-        <p>SCIWP integrates an easy to use ORM. You can map database tables to models by just creating a class. You can then customize table tames, default attributes, timestamps and more.</p>
+        <p>SCI WP integrates an easy to use ORM. You can map database tables to models by just creating a class. You can then customize table tames, default attributes, timestamps and more.</p>
         <p>You can then create database queries against the models in order to get one or many records which will be mapped to create model instances with the retrieved attributes.</p>
       </>
     ),
@@ -32,7 +66,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        SCIWP extends WordPress including most of the functionalities and tools you can find in modern PHP frameworks, an autoloading, routing and common patterns like MVC or Dependency Injection.
+        SCI WP extends WordPress including most of the functionalities and tools you can find in modern PHP frameworks, an autoloading, routing and common patterns like MVC or Dependency Injection.
       </>
     ),
   },
@@ -41,7 +75,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        With SCIWP you can divide your code in modules and create a logical separation among models, controllers and views, including the bussiness logic withing services.
+        With SCI WP you can divide your code in modules and create a logical separation among models, controllers and views, including the bussiness logic withing services.
       </>
     ),
   },
@@ -50,7 +84,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        When you bundle your plugin with SCIWP, you are also providing a great way of allowing another WordPress developers to extend your plugin and create a community around it.
+        When you bundle your plugin with SCI WP, you are also providing a great way of allowing another WordPress developers to extend your plugin and create a community around it.
       </>
     ),
   },
@@ -68,7 +102,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Instead for providing a different way of doing things that WordPress already does, SCIWP only extends WordPress functionalities so you can continue to use the WordPress standards you are used to.
+        Instead for providing a different way of doing things that WordPress already does, SCI WP only extends WordPress functionalities so you can continue to use the WordPress standards you are used to.
       </>
     ),
   },
@@ -77,7 +111,7 @@ const features = [
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Instead for providing a different way of doing things that WordPress already does, SCIWP only extends WordPress functionalities so you can continue to use the WordPress standards you are used to.
+        Instead for providing a different way of doing things that WordPress already does, SCI WP only extends WordPress functionalities so you can continue to use the WordPress standards you are used to.
       </>
     ),
   },
@@ -135,12 +169,12 @@ function Home() {
   let featureEven = true;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`SCIWP Framework ${siteConfig.title}`}
+      description="A MVC Framework for WordPress <head />">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
 
-          <img alt="Docusaurus with Keytar" className="heroLogo_cGK-" src="/img/hero-logo.png" />
+          <img alt="Framework Logo" className="heroLogo_cGK-" src="/img/hero-logo.png" />
 
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -150,7 +184,7 @@ function Home() {
                 'button button--outline button--secondary button--lg sci-button',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/framework-prologue')}>
+              to={useBaseUrl('docs/prologue')}>
               Get Started
             </Link>
           </div>
@@ -187,10 +221,23 @@ function Home() {
           </div>
         </section>
         */}
+        {people && people.length && (
+          <section className={styles.people}>
+            <div className="container">
+              <div className="row">
+                {people.map((props, idx) => (
+                  <Feature key={idx} {...props} />
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
       </main>
-
     </Layout>
   );
 }
+
+
+
 
 export default Home;

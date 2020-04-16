@@ -11,56 +11,62 @@ export default [
   
 },
 {
-  path: '/blog',
-  component: ComponentCreator('/blog'),
+  path: '/',
+  component: ComponentCreator('/'),
   exact: true,
   
 },
 {
-  path: '/blog/hello-world',
-  component: ComponentCreator('/blog/hello-world'),
+  path: '/tutorials',
+  component: ComponentCreator('/tutorials'),
   exact: true,
   
 },
 {
-  path: '/blog/hola',
-  component: ComponentCreator('/blog/hola'),
+  path: '/tutorials/hello-world',
+  component: ComponentCreator('/tutorials/hello-world'),
   exact: true,
   
 },
 {
-  path: '/blog/tags',
-  component: ComponentCreator('/blog/tags'),
+  path: '/tutorials/how-to-embed',
+  component: ComponentCreator('/tutorials/how-to-embed'),
   exact: true,
   
 },
 {
-  path: '/blog/tags/docusaurus',
-  component: ComponentCreator('/blog/tags/docusaurus'),
+  path: '/tutorials/tags',
+  component: ComponentCreator('/tutorials/tags'),
   exact: true,
   
 },
 {
-  path: '/blog/tags/facebook',
-  component: ComponentCreator('/blog/tags/facebook'),
+  path: '/tutorials/tags/docusaurus',
+  component: ComponentCreator('/tutorials/tags/docusaurus'),
   exact: true,
   
 },
 {
-  path: '/blog/tags/hello',
-  component: ComponentCreator('/blog/tags/hello'),
+  path: '/tutorials/tags/facebook',
+  component: ComponentCreator('/tutorials/tags/facebook'),
   exact: true,
   
 },
 {
-  path: '/blog/tags/hola',
-  component: ComponentCreator('/blog/tags/hola'),
+  path: '/tutorials/tags/hello',
+  component: ComponentCreator('/tutorials/tags/hello'),
   exact: true,
   
 },
 {
-  path: '/blog/welcome',
-  component: ComponentCreator('/blog/welcome'),
+  path: '/tutorials/tags/hola',
+  component: ComponentCreator('/tutorials/tags/hola'),
+  exact: true,
+  
+},
+{
+  path: '/tutorials/welcome',
+  component: ComponentCreator('/tutorials/welcome'),
   exact: true,
   
 },
@@ -70,176 +76,146 @@ export default [
   
   routes: [
 {
-  path: '/docs/2-x',
-  component: ComponentCreator('/docs/2-x'),
+  path: '/docs/assets',
+  component: ComponentCreator('/docs/assets'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/addon-plugins',
-  component: ComponentCreator('/docs/framework/addon-plugins'),
+  path: '/docs/autoloader',
+  component: ComponentCreator('/docs/autoloader'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/assets',
-  component: ComponentCreator('/docs/framework/assets'),
+  path: '/docs/basics',
+  component: ComponentCreator('/docs/basics'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/autoloader',
-  component: ComponentCreator('/docs/framework/autoloader'),
+  path: '/docs/collections',
+  component: ComponentCreator('/docs/collections'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/basics',
-  component: ComponentCreator('/docs/framework/basics'),
+  path: '/docs/configuration',
+  component: ComponentCreator('/docs/configuration'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/configuration',
-  component: ComponentCreator('/docs/framework/configuration'),
+  path: '/docs/contribution',
+  component: ComponentCreator('/docs/contribution'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/contribution',
-  component: ComponentCreator('/docs/framework/contribution'),
+  path: '/docs/dependencies',
+  component: ComponentCreator('/docs/dependencies'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/dependencies',
-  component: ComponentCreator('/docs/framework/dependencies'),
+  path: '/docs/helpers',
+  component: ComponentCreator('/docs/helpers'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/installation',
-  component: ComponentCreator('/docs/framework/installation'),
+  path: '/docs/installation',
+  component: ComponentCreator('/docs/installation'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/model-queries',
-  component: ComponentCreator('/docs/framework/model-queries'),
+  path: '/docs/models',
+  component: ComponentCreator('/docs/models'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/models',
-  component: ComponentCreator('/docs/framework/models'),
+  path: '/docs/plugin-activation',
+  component: ComponentCreator('/docs/plugin-activation'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/plugin-activation',
-  component: ComponentCreator('/docs/framework/plugin-activation'),
+  path: '/docs/plugin-deactivation',
+  component: ComponentCreator('/docs/plugin-deactivation'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/plugin-deactivation',
-  component: ComponentCreator('/docs/framework/plugin-deactivation'),
+  path: '/docs/plugin-options',
+  component: ComponentCreator('/docs/plugin-options'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/plugin-services',
-  component: ComponentCreator('/docs/framework/plugin-services'),
+  path: '/docs/plugin-services',
+  component: ComponentCreator('/docs/plugin-services'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/plugins',
-  component: ComponentCreator('/docs/framework/plugins'),
+  path: '/docs/plugins',
+  component: ComponentCreator('/docs/plugins'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/prologue',
-  component: ComponentCreator('/docs/framework/prologue'),
+  path: '/docs/prologue',
+  component: ComponentCreator('/docs/prologue'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/providers',
-  component: ComponentCreator('/docs/framework/providers'),
+  path: '/docs/providers',
+  component: ComponentCreator('/docs/providers'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/rest',
-  component: ComponentCreator('/docs/framework/rest'),
+  path: '/docs/queries',
+  component: ComponentCreator('/docs/queries'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/routes',
-  component: ComponentCreator('/docs/framework/routes'),
+  path: '/docs/request',
+  component: ComponentCreator('/docs/request'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/style-manager',
-  component: ComponentCreator('/docs/framework/style-manager'),
+  path: '/docs/rest',
+  component: ComponentCreator('/docs/rest'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/templates',
-  component: ComponentCreator('/docs/framework/templates'),
+  path: '/docs/routes',
+  component: ComponentCreator('/docs/routes'),
   exact: true,
   
 },
 {
-  path: '/docs/framework/views',
-  component: ComponentCreator('/docs/framework/views'),
+  path: '/docs/style-manager',
+  component: ComponentCreator('/docs/style-manager'),
   exact: true,
   
 },
 {
-  path: '/docs/mdx',
-  component: ComponentCreator('/docs/mdx'),
+  path: '/docs/templates',
+  component: ComponentCreator('/docs/templates'),
   exact: true,
   
 },
 {
-  path: '/docs/plugin/doc1',
-  component: ComponentCreator('/docs/plugin/doc1'),
-  exact: true,
-  
-},
-{
-  path: '/docs/plugin/doc2',
-  component: ComponentCreator('/docs/plugin/doc2'),
-  exact: true,
-  
-},
-{
-  path: '/docs/plugin/doc3',
-  component: ComponentCreator('/docs/plugin/doc3'),
-  exact: true,
-  
-},
-{
-  path: '/docs/plugin/mdx',
-  component: ComponentCreator('/docs/plugin/mdx'),
-  exact: true,
-  
-},
-{
-  path: '/docs/sciwp-collections',
-  component: ComponentCreator('/docs/sciwp-collections'),
-  exact: true,
-  
-},
-{
-  path: '/docs/sciwp-dependency-injection',
-  component: ComponentCreator('/docs/sciwp-dependency-injection'),
+  path: '/docs/views',
+  component: ComponentCreator('/docs/views'),
   exact: true,
   
 }],

@@ -1,0 +1,21 @@
+{
+  "permalink": "/tutorials/hola",
+  "source": "@site/tutorials\\2019-05-28-addon-plugins.md",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet",
+  "date": "2019-05-28T00:00:00.000Z",
+  "tags": [
+    {
+      "label": "hola",
+      "permalink": "/tutorials/tags/hola"
+    },
+    {
+      "label": "docusaurus",
+      "permalink": "/tutorials/tags/docusaurus"
+    }
+  ],
+  "title": "Hola",
+  "prevItem": {
+    "title": "Hello",
+    "permalink": "/tutorials/hello-world"
+  }
+}

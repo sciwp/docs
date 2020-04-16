@@ -8,12 +8,12 @@
           {
             "type": "link",
             "label": "Prologue",
-            "href": "/docs/framework/prologue"
+            "href": "/docs/prologue"
           },
           {
             "type": "link",
             "label": "Contribution",
-            "href": "/docs/framework/contribution"
+            "href": "/docs/contribution"
           }
         ]
       },
@@ -24,12 +24,17 @@
           {
             "type": "link",
             "label": "Installation",
-            "href": "/docs/framework/installation"
+            "href": "/docs/installation"
+          },
+          {
+            "type": "link",
+            "label": "Autoloader",
+            "href": "/docs/autoloader"
           },
           {
             "type": "link",
             "label": "Configuration",
-            "href": "/docs/framework/configuration"
+            "href": "/docs/configuration"
           }
         ]
       },
@@ -40,17 +45,17 @@
           {
             "type": "link",
             "label": "Basics",
-            "href": "/docs/framework/basics"
-          },
-          {
-            "type": "link",
-            "label": "Autoloader",
-            "href": "/docs/framework/autoloader"
+            "href": "/docs/basics"
           },
           {
             "type": "link",
             "label": "Dependencies",
-            "href": "/docs/framework/dependencies"
+            "href": "/docs/dependencies"
+          },
+          {
+            "type": "link",
+            "label": "Service Providers",
+            "href": "/docs/providers"
           }
         ]
       },
@@ -61,49 +66,43 @@
           {
             "type": "link",
             "label": "Plugins",
-            "href": "/docs/framework/plugins"
+            "href": "/docs/plugins"
           },
           {
             "type": "link",
-            "label": "Addon Plugins",
-            "href": "/docs/framework/addon-plugins"
+            "label": "Plugin Options",
+            "href": "/docs/plugin-options"
           },
           {
             "type": "link",
             "label": "Plugin Activation",
-            "href": "/docs/framework/plugin-activation"
+            "href": "/docs/plugin-activation"
           },
           {
             "type": "link",
             "label": "Plugin Dectivation",
-            "href": "/docs/framework/plugin-deactivation"
+            "href": "/docs/plugin-deactivation"
           }
         ]
       },
       {
         "type": "category",
-        "label": "Routes",
+        "label": "Router",
         "items": [
           {
             "type": "link",
-            "label": "Routes",
-            "href": "/docs/framework/routes"
+            "label": "HTTP Routes",
+            "href": "/docs/routes"
           },
           {
             "type": "link",
             "label": "Rest Routes",
-            "href": "/docs/framework/rest"
-          }
-        ]
-      },
-      {
-        "type": "category",
-        "label": "Services",
-        "items": [
+            "href": "/docs/rest"
+          },
           {
             "type": "link",
-            "label": "Service Providers",
-            "href": "/docs/framework/providers"
+            "label": "Request",
+            "href": "/docs/request"
           }
         ]
       },
@@ -114,17 +113,17 @@
           {
             "type": "link",
             "label": "Views",
-            "href": "/docs/framework/views"
-          },
-          {
-            "type": "link",
-            "label": "Templates",
-            "href": "/docs/framework/templates"
+            "href": "/docs/views"
           },
           {
             "type": "link",
             "label": "Assets",
-            "href": "/docs/framework/assets"
+            "href": "/docs/assets"
+          },
+          {
+            "type": "link",
+            "label": "Templates",
+            "href": "/docs/templates"
           }
         ]
       },
@@ -135,41 +134,55 @@
           {
             "type": "link",
             "label": "Models",
-            "href": "/docs/framework/models"
+            "href": "/docs/models"
           },
           {
             "type": "link",
-            "label": "Model Queries",
-            "href": "/docs/framework/model-queries"
+            "label": "Queries",
+            "href": "/docs/queries"
           }
         ]
       },
       {
         "type": "category",
-        "label": "Structures",
-        "items": []
+        "label": "Support",
+        "items": [
+          {
+            "type": "link",
+            "label": "Collections",
+            "href": "/docs/collections"
+          },
+          {
+            "type": "link",
+            "label": "Helpers",
+            "href": "/docs/helpers"
+          }
+        ]
       }
     ]
   },
   "permalinkToSidebar": {
-    "/docs/framework/addon-plugins": "frameworkSidebar",
-    "/docs/framework/assets": "frameworkSidebar",
-    "/docs/framework/autoloader": "frameworkSidebar",
-    "/docs/framework/basics": "frameworkSidebar",
-    "/docs/framework/configuration": "frameworkSidebar",
-    "/docs/framework/contribution": "frameworkSidebar",
-    "/docs/framework/dependencies": "frameworkSidebar",
-    "/docs/framework/installation": "frameworkSidebar",
-    "/docs/framework/model-queries": "frameworkSidebar",
-    "/docs/framework/models": "frameworkSidebar",
-    "/docs/framework/plugin-activation": "frameworkSidebar",
-    "/docs/framework/plugin-deactivation": "frameworkSidebar",
-    "/docs/framework/plugins": "frameworkSidebar",
-    "/docs/framework/prologue": "frameworkSidebar",
-    "/docs/framework/providers": "frameworkSidebar",
-    "/docs/framework/rest": "frameworkSidebar",
-    "/docs/framework/routes": "frameworkSidebar",
-    "/docs/framework/templates": "frameworkSidebar",
-    "/docs/framework/views": "frameworkSidebar"
+    "/docs/assets": "frameworkSidebar",
+    "/docs/autoloader": "frameworkSidebar",
+    "/docs/basics": "frameworkSidebar",
+    "/docs/collections": "frameworkSidebar",
+    "/docs/configuration": "frameworkSidebar",
+    "/docs/contribution": "frameworkSidebar",
+    "/docs/dependencies": "frameworkSidebar",
+    "/docs/helpers": "frameworkSidebar",
+    "/docs/installation": "frameworkSidebar",
+    "/docs/models": "frameworkSidebar",
+    "/docs/plugin-activation": "frameworkSidebar",
+    "/docs/plugin-deactivation": "frameworkSidebar",
+    "/docs/plugin-options": "frameworkSidebar",
+    "/docs/plugins": "frameworkSidebar",
+    "/docs/prologue": "frameworkSidebar",
+    "/docs/providers": "frameworkSidebar",
+    "/docs/queries": "frameworkSidebar",
+    "/docs/request": "frameworkSidebar",
+    "/docs/rest": "frameworkSidebar",
+    "/docs/routes": "frameworkSidebar",
+    "/docs/templates": "frameworkSidebar",
+    "/docs/views": "frameworkSidebar"
   }
 }

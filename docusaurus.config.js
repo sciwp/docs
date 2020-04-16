@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'SciWP',
-  tagline: 'A MVC framework to create plugins for WordPress',
+  title: 'CREATE MVC PLUGINS FOR WORDPRESS',
+  tagline: '- The Framework of Choice of Mad Sciencists -',
   url: 'https://sciwp.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -14,9 +14,11 @@ module.exports = {
         src: 'img/logo.svg',
       },
       links: [
-        {to: 'docs/framework/prologue', label: 'Framework Documentation', position: 'left'},
+        {to: 'docs/prologue', label: 'Documentation', position: 'left'},
+        {to: 'tutorials', label: 'Tutorials', position: 'left'},
+        {to: 'blog', label: 'Contact', position: 'left'},
         //{to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
-        //{to: 'blog', label: 'Blog', position: 'left'},
+
         {
           href: 'https://github.com/sciwp/',
           label: 'GitHub',
@@ -96,5 +98,16 @@ module.exports = {
         },
       },
     ],
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        path: 'tutorials',
+        routeBasePath: 'tutorials',
+        include: ['*.md', '*.mdx'],
+      },
+    ],
+    '@docusaurus/plugin-content-pages',
   ],
 };

@@ -1,7 +1,7 @@
 {
   "id": "framework-addons",
   "title": "Addon Plugins",
-  "description": "In previous sections you learned how to include SCIWP in your plugin. However once configured the framework it can be used with any other plugin you create with almost zero configuration.\r",
+  "description": "In previous sections you learned how to include MVC WP in your plugin. However once configured the framework it can be used with any other plugin you create with almost zero configuration.\r",
   "source": "@site/docs\\framework-addons.md",
   "permalink": "/docs/framework-addons",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/framework-addons.md",

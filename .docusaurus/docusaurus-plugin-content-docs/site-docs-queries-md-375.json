@@ -1,0 +1,18 @@
+{
+  "id": "queries",
+  "title": "Queries",
+  "description": "You can perform some advanced queries into any database table or directoy into any model.\r",
+  "source": "@site/docs\\queries.md",
+  "permalink": "/docs/queries",
+  "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/queries.md",
+  "sidebar_label": "Queries",
+  "sidebar": "frameworkSidebar",
+  "previous": {
+    "title": "Models",
+    "permalink": "/docs/models"
+  },
+  "next": {
+    "title": "Collections",
+    "permalink": "/docs/collections"
+  }
+}
