@@ -10,6 +10,8 @@ tags: [bundle, sciwp]
 
 In the Plugins section of the documentation you learned how to register you plugin with SCI MVC. However once the framework is configured it can be used with any other plugin you create with almost zero configuration.
 
+<!--truncate-->
+
 Athough these plugins are used in exactly the same way as the main plugin where the framework resides, we call them **Addons** because they require the main plugin to be installed and enabled.
 
 ## Creating Addons
