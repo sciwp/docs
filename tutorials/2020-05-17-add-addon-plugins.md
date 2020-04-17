@@ -1,20 +1,14 @@
 ---
-id: how-to-embed
-title: Hola
-author: Gao Wei
-author_title: Docusaurus Core Team
-author_url: https://github.com/wgao19
-author_image_url: https://avatars1.githubusercontent.com/u/2055384?v=4
-tags: [hola, docusaurus]
+id: how-to-add-addon-plugins
+title: How to create Addons for bundled SCIWP plugins
+author: Eduardo Lazaro
+author_title: Full Stack Developer
+author_url: https://github.com/neeonez
+author_image_url: https://avatars2.githubusercontent.com/u/7797530
+tags: [bundle, sciwp]
 ---
 
-In previous sections you learned how to register you plugin with SCI MVC. However once the framework is configured it can be used with any other plugin you create with almost zero configuration.
-
-<!--truncate-->
-
-> **Please note**: If you bundle the framework with your Plugin,
-> you should append your plugin namespace to the Sci framework components.
-> For example, you would reference the `MyPlugin\Sci\Plugins\Plugin` class instead of the `Sci\Plugins\Plugin` class.
+In the Plugins section of the documentation you learned how to register you plugin with SCI MVC. However once the framework is configured it can be used with any other plugin you create with almost zero configuration.
 
 Athough these plugins are used in exactly the same way as the main plugin where the framework resides, we call them **Addons** because they require the main plugin to be installed and enabled.
 

@@ -19,7 +19,7 @@
   ],
   "title": "Welcome",
   "nextItem": {
-    "title": "Hello",
-    "permalink": "/tutorials/hello-world"
+    "title": "How to create Addons for bundled SCIWP plugins",
+    "permalink": "/tutorials/how-to-embed"
   }
 }

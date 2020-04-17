@@ -60,3 +60,7 @@ section.mvc h2 {
 article {
   font-size: 18px;
  }
+
+.text-red {
+  color:#ff3000;
+}

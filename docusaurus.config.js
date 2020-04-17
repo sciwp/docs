@@ -16,9 +16,6 @@ module.exports = {
       links: [
         {to: 'docs/prologue', label: 'Documentation', position: 'left'},
         {to: 'tutorials', label: 'Tutorials', position: 'left'},
-        {to: 'blog', label: 'Contact', position: 'left'},
-        //{to: 'docs/plugin/doc1', label: 'Plugin Documentation', position: 'left'},
-
         {
           href: 'https://github.com/sciwp/',
           label: 'GitHub',

@@ -34,11 +34,6 @@ export default {
           "position": "left"
         },
         {
-          "to": "blog",
-          "label": "Contact",
-          "position": "left"
-        },
-        {
           "href": "https://github.com/sciwp/",
           "label": "GitHub",
           "position": "right"

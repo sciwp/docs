@@ -9,32 +9,20 @@ import styles from './styles.module.css';
 
 const people = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Eduardo Lazaro</>,
+    imageUrl: 'img/people/edu.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Built this framework to better organize code in my plugins, also in the hope it's useful for more people.
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Dr. Eggman</>,
+    imageUrl: 'img/people/robotnik.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
-    ),
-  },
-  {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        I will make a new robot with laser eyes and a rocket launcher. I will have such a good time.
       </>
     ),
   },
@@ -139,6 +127,23 @@ function FeatureMedia({ title, imageUrl }) {
   );
 }
 
+function People({ imageUrl, title, description }) {
+  return(
+    <div className={classnames('col col--6', styles.people)}>
+      <div className={classnames(styles.peopleMedia)}>
+        <div className="text--center">
+          <img className={styles.peopleImage} src={imageUrl} alt={title} />
+        </div>
+      </div>
+      <div className={classnames(styles.peopleContent)}>
+        <p><span className="text-red">" </span>{description}<span className="text-red"> "</span></p>
+        <p className="author">- {title}</p>
+      </div>
+    </div>
+  );
+}
+
+
 function Feature({ imageUrl, title, description, featureEven }) {
   if (featureEven ) {
     return(
@@ -221,13 +226,14 @@ function Home() {
           </div>
         </section>
         */}
+        <hr/>
         {people && people.length && (
           <section className={styles.people}>
             <div className="container">
               <div className="row">
-                {people.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
+                {people.map((props, idx) => {
+                  return <People key={idx} {...props} />
+                })}
               </div>
             </div>
           </section>

@@ -1,8 +1,8 @@
 {
-  "permalink": "/tutorials/how-to-embed",
-  "source": "@site/tutorials\\2019-05-28-how-to-embed.md",
+  "permalink": "/tutorials/how-to-add-addon-plugins",
+  "source": "@site/tutorials\\2020-05-17-add-addon-plugins.md",
   "description": "In the Plugins section of the documentation you learned how to register you plugin with SCI MVC. However once the framework is configured it can be used with any other plugin you create with almost zero configuration.",
-  "date": "2019-05-28T00:00:00.000Z",
+  "date": "2020-05-17T00:00:00.000Z",
   "tags": [
     {
       "label": "bundle",

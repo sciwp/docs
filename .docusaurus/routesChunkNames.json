@@ -6,77 +6,36 @@
     "component": "component---theme-blog-list-pagea-6-a-7ba",
     "items": [
       {
-        "content": "content---tutorials-3-d-0-5ce"
-      },
-      {
-        "content": "content---tutorials-4-b-3-2f0"
-      },
-      {
-        "content": "content---tutorials-5-ae-837"
+        "content": "content---tutorialscdf-f7c"
       }
     ],
     "metadata": "metadata---tutorials-6-fa-239"
   },
-  "/tutorials/hello-world": {
+  "/tutorials/how-to-add-addon-plugins": {
     "component": "component---theme-blog-post-pageccc-cab",
-    "content": "content---tutorials-hello-world-1-ba-f3e"
-  },
-  "/tutorials/how-to-embed": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "content": "content---tutorials-how-to-embedf-99-8de"
+    "content": "content---tutorials-how-to-embed-693-94f"
   },
   "/tutorials/tags": {
     "component": "component---theme-blog-tags-list-page-01-a-d0b",
     "tags": "tags---tutorials-tags-013-f9a"
   },
-  "/tutorials/tags/docusaurus": {
+  "/tutorials/tags/bundle": {
     "component": "component---theme-blog-tags-posts-page-687-b6c",
     "items": [
       {
-        "content": "content---tutorials-3-d-0-5ce"
-      },
-      {
-        "content": "content---tutorials-4-b-3-2f0"
-      },
-      {
-        "content": "content---tutorials-5-ae-837"
+        "content": "content---tutorialscdf-f7c"
       }
     ],
-    "metadata": "metadata---tutorials-tags-docusaurus-608-725"
+    "metadata": "metadata---tutorials-tags-bundlef-0-b-23b"
   },
-  "/tutorials/tags/facebook": {
+  "/tutorials/tags/sciwp": {
     "component": "component---theme-blog-tags-posts-page-687-b6c",
     "items": [
       {
-        "content": "content---tutorials-3-d-0-5ce"
+        "content": "content---tutorialscdf-f7c"
       }
     ],
-    "metadata": "metadata---tutorials-tags-facebooke-82-27d"
-  },
-  "/tutorials/tags/hello": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "items": [
-      {
-        "content": "content---tutorials-3-d-0-5ce"
-      },
-      {
-        "content": "content---tutorials-4-b-3-2f0"
-      }
-    ],
-    "metadata": "metadata---tutorials-tags-hello-499-d3e"
-  },
-  "/tutorials/tags/hola": {
-    "component": "component---theme-blog-tags-posts-page-687-b6c",
-    "items": [
-      {
-        "content": "content---tutorials-5-ae-837"
-      }
-    ],
-    "metadata": "metadata---tutorials-tags-holad-87-693"
-  },
-  "/tutorials/welcome": {
-    "component": "component---theme-blog-post-pageccc-cab",
-    "content": "content---tutorials-welcome-4-e-4-90c"
+    "metadata": "metadata---tutorials-tags-sciwp-678-c9c"
   },
   "/docs/:route": {
     "component": "component---theme-doc-page-1-be-9be",

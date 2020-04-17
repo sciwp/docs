@@ -23,14 +23,8 @@ export default [
   
 },
 {
-  path: '/tutorials/hello-world',
-  component: ComponentCreator('/tutorials/hello-world'),
-  exact: true,
-  
-},
-{
-  path: '/tutorials/how-to-embed',
-  component: ComponentCreator('/tutorials/how-to-embed'),
+  path: '/tutorials/how-to-add-addon-plugins',
+  component: ComponentCreator('/tutorials/how-to-add-addon-plugins'),
   exact: true,
   
 },
@@ -41,32 +35,14 @@ export default [
   
 },
 {
-  path: '/tutorials/tags/docusaurus',
-  component: ComponentCreator('/tutorials/tags/docusaurus'),
+  path: '/tutorials/tags/bundle',
+  component: ComponentCreator('/tutorials/tags/bundle'),
   exact: true,
   
 },
 {
-  path: '/tutorials/tags/facebook',
-  component: ComponentCreator('/tutorials/tags/facebook'),
-  exact: true,
-  
-},
-{
-  path: '/tutorials/tags/hello',
-  component: ComponentCreator('/tutorials/tags/hello'),
-  exact: true,
-  
-},
-{
-  path: '/tutorials/tags/hola',
-  component: ComponentCreator('/tutorials/tags/hola'),
-  exact: true,
-  
-},
-{
-  path: '/tutorials/welcome',
-  component: ComponentCreator('/tutorials/welcome'),
+  path: '/tutorials/tags/sciwp',
+  component: ComponentCreator('/tutorials/tags/sciwp'),
   exact: true,
   
 },
