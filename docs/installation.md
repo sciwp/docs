@@ -23,23 +23,64 @@ The installation of SCI WP Framework will not take you more than one or two minu
 
 ### How to Install
 
-...
+Here are the steps you need to follow to install SCIWP into your WordPress website:
 
+1. The first thing you need to do is to [download the SCIWP WordPress plugin from here](https://github.com/sciwp/sciwp-framework/releases/latest).
+2. Then extract the directory inside the zip file and place it into your WordPress plugins folder.
+3. Rename the directory to `sciwp`. In case you don't rename it, the plugin will try to rename its folder when you enable it for the first time.
+
+And that's all. Once the plugin is enabled from he WordPress interface, you can start using with with your plugins.
+
+Let's see an example of how you can start using it with a plugin. The next code should be placed into your plugin's main file:
+
+```php
+namespace MyPlugin;
+ 
+use Sci\Plugin\Plugin;
+
+# We just create the plugin and register it
+$plugin = Plugin::create(__FILE__)->register('my-plugin');
+```
+
+However, we can place some additional code to check for the presence of the SCIWP pluginfirst, in case it doesn't throw an error if it's not enabled:
+
+```php
+namespace MyPlugin;
+
+use Sci\Plugin\Plugin;
+
+require_once( ABSPATH . '/wp-admin/includes/plugin.php' );
+
+# Check if the framework is active
+if (!is_plugin_active('sciwp/main.php')) {
+
+    # Deactivate the current plugin and throw an advice with a button to go back
+    deactivate_plugins(__FILE__);
+    wp_die(
+        'MVC WP Framework Plugin is required',
+        'Error', 
+        array( 'response'=>200, 'back_link'=>TRUE )
+    );
+}
+
+
+# Create the plugin and register it
+$plugin = Plugin::create(__FILE__)->register('my-plugin');
+```
 
 ### How to Bundle
 
-
-You can bundle the framework with a new WordPress plugin or with an existing plugin you have created. The installation process is exactly the same.
+You can bundle the framework with a new WordPress plugin or with an existing plugin you have created. The installation process is similar.
 
 If you are creating a new plugin, start by creating a new directory for it into the ```\wp-content\plugins``` folder. For example: ```\wp-content\plugins\myplugin```. Then follow these steps:
 
-1. Create a new empty directory called **sciwp** inside your plugin's folder.
-2. Download the latest stable release of SCI WP Framework [from here](https://github.com/sciwp/sciwp-framework/releases).
-3. Extract the downloaded file contentents into the plugin's **sciwp** directory created in the first step.
+1. You first need to [download the SCIWP WordPress plugin from here](https://github.com/sciwp/sciwp-framework/releases/latest).
+2. Open the downloaded zip file and extract the included folder to your desktop or any other directory.
+1. Open the extracted directory and simple copy the `framework` directory into the root folder of the plugin you want to use with the framework. For example if your plugin is in the folder `my-plugin`, the framework should be located at the `\wp-content\plugins\my-plugin\framework` folder.
 
 After installing the framework, you still need to configure the Plugin to use it, which will take around 40 seconds.
 
-If you are creating a new plugin, you can just use the SCI WP Boilerplate template. To use the template, [download the latest template release from here](https://github.com/sciwp/sciwp-boilerplate/releases) and then extract the downloaded file contents into the ```\wp-content\plugins\myplugin``` directory, as per our example.
+If you are bundling the framework with a new plugin, you can just use the SCI WP Boilerplate template. To use the template, [download the latest template release from here](https://github.com/sciwp/sciwp-boilerplate/releases/latest) and then extract the downloaded file contents into the `\wp-content\plugins\my-plugin` directory, as per our example.
 
 If you are not using the boilerplate, just edit the main file of your plugin, where you will define the WordPress plugin name and the plugin description. This file is usually located in the root folter of your plugin. Then you just need add the next two lines of code to this file:
 
@@ -47,25 +88,19 @@ If you are not using the boilerplate, just edit the main file of your plugin, wh
 # Define the namespace
 namespace MyPlugin;
 
-# Start the framework assuming the plugin file is 
-# in the root folder of your plugin
+use Sci\Plugin\Plugin;
+
+# Start the framework assuming the plugin file is  in the root folder of your plugin
 include plugin_dir_path(__FILE__).'sciwp/run.php';
 
 # Create a new Plugin and regsiter it into the Plugin Manager
-Sci\Plugin::create(__FILE__)->register();
+Plugin::create(__FILE__)->register();
 ```
 As you can see, we first define the namespace `MyPlugin` for the file. The namespace specified in this file will be the base namespace for the Plugin. However, it's possible to use a different one by just defining a namespace in the main file of the plugin.
 
 > **Please note**: If you bundle the framework with your Plugin,
 > you should append your plugin namespace to the Sci framework components.
 > For example, you would reference the `MyPlugin\Sci\Plugins\Plugin` class instead of the `Sci\Plugins\Plugin` class.
-
-If you don't specify a namespace at the top of the file, just remember to include the full class name for the Plugin class, including the base namespace, when creating the plugin like in the enxt example:
-
-```php
-# Specify the full namespace
-MyPlugin\Sci\Plugin::create(__FILE__)->register();
-```
 
 That's all you need to start. To **activate the plugin**, just access the WordPress administration panel and activate it as usually. However, there are some considerations described in the [Server Configuration](#server-configuration) section below you might need to take before activating your Plugin.
 
