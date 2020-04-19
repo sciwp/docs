@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto:400,400i,500,500i,700,700i|Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|Nunito:wght@400;600;800;900|Roboto:400,400i,500,500i,700,700i|Sriracha&display=swap');
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -48,19 +48,41 @@ header.hero .sci-button:hover {
   border: 2px solid #dbc60f; 
 }
 
-section.mvc {
-  background-color: #78efc7!important;
-  border-top: 1px solid #eee;
-}
-
-section.mvc h2 {
-  color: #3c4858;
-}
-
 article {
   font-size: 18px;
  }
 
 .text-red {
   color:#ff3000;
+}
+
+
+.center {
+  margin: 0 auto;
+}
+
+.content-center {
+  text-align: center;
+}
+
+.page h2 {
+  padding-top: 100px;
+  padding-bottom:20px;
+  font-size: 38px;
+  font-weight: 900;
+  color:rgb(60, 72, 88);
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+
+.page .h2sub {
+  margin: 0 auto;
+  max-width: 860px;
+  padding-bottom:50px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color:rgb(60, 72, 88);
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing:antialiased;
 }

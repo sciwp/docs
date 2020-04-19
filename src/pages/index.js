@@ -195,10 +195,18 @@ function Home() {
           </div>
         </div>
       </header>
-      <main>
+      <main className="page">
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
+              <div className="row">
+                  <div className="col col--12 content-center">
+                    <h2>A Couple of Things About SCi WP</h2>
+                    <div className="h2sub">
+                        Let's see how SCI WP Framework can help you build better WordPress Plugins as you write readable and well organized code
+                    </div>
+                  </div>
+              </div>
               <div className="row">
                 {features.map((props, idx) => {
                   featureEven = !featureEven;
@@ -208,28 +216,43 @@ function Home() {
             </div>
           </section>
         )}
-        {
-        /*
+
+
+{/*
         <section className="mvc">
           <div className="container">
             <div className="row">
-              <div className="col col--4">
-                <h2>sd</h2>
+              <div className="col col--12 content-center">
+                <h2>Bundle Sci WP With your Plugin</h2>
+                <div className="h2sub">
+                You can Include SCi WP with your own Plugin in case you want to distribute it
+                </div>
               </div>
-              <div className="col col--4">
-                <h2>sd</h2>
+            </div>
+            <div className="row">
+              <div className="col col--6">
+                <h2></h2>
               </div>
-              <div className="col col--4">
-                <h2>sd</h2>
+              <div className="col col--6">
+                <h2></h2>
               </div>
             </div>
           </div>
         </section>
-        */}
+
+*/}
         <hr/>
         {people && people.length && (
           <section className={styles.people}>
             <div className="container">
+            <div className="row">
+              <div className="col col--12 content-center">
+                <h2>Who built SCi WP</h2>
+                <div className="h2sub">
+                For problems please contact the guy on the right
+                </div>
+              </div>
+            </div>
               <div className="row">
                 {people.map((props, idx) => {
                   return <People key={idx} {...props} />
