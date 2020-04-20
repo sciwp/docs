@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 
 const people = [
   {
-    title: <>Eduardo Lazaro <a href="https://github.com/neeonez"><i class="fab fa-github"></i></a></>,
+    title: <>Eduardo Lazaro <a href="https://github.com/neeonez"><i className="fab fa-github"></i></a></>,
     imageUrl: 'img/people/edu.png',
     description: (
       <>
