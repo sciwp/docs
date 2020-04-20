@@ -10,12 +10,6 @@
   overflow: hidden;
 }
 
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
 .buttons {
   display: flex;
   align-items: center;
@@ -146,9 +140,46 @@
   box-shadow: 16px 16px 16px rgba(0,0,0,.16);
 }
 
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
 
+  .feature {
+    display: flex !important;
+    flex-direction: column;
+  }
 
+  .featureMedia {
+    width: 100%;
+  }
 
+  .feature:nth-child(odd) .featureImage {
+    transform: rotate(0deg);
+    
+  }
+  
+  .feature:nth-child(even) .featureImage {
+    transform: rotate(0deg);
+  }
+
+  .feature:nth-child(even) .featureMedia {
+    order:2 !important;
+  }
+
+  .featureContent {
+    width: 100%;
+  }
+
+  .feature:nth-child(odd) .featureContent {
+    margin-right:0%;  
+  }
+
+  .feature:nth-child(even) .featureContent {
+    margin-left:0%
+  }
+  
+}
 
 
 
