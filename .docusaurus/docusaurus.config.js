@@ -71,7 +71,7 @@ export default {
           ]
         }
       ],
-      "copyright": "Built by Eduardo Lázaro Rodríguez with Docusaurus"
+      "copyright": "Built by Eduardo Lázaro Rodríguez (Kenodo Ltd) with Docusaurus"
     }
   },
   "title": "CREATE MVC PLUGINS FOR WORDPRESS",

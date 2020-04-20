@@ -78,7 +78,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Built by Eduardo Lázaro Rodríguez with Docusaurus`,
+      copyright: `Built by Eduardo Lázaro Rodríguez (Kenodo Ltd) with Docusaurus`,
     },
   },
   presets: [

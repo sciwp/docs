@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 
 const people = [
   {
-    title: <>Eduardo Lazaro</>,
+    title: <>Eduardo Lazaro <a href="https://github.com/neeonez"><i class="fab fa-github"></i></a></>,
     imageUrl: 'img/people/edu.png',
     description: (
       <>
@@ -30,12 +30,21 @@ const people = [
 
 const features = [
   {
-    title: <>Extremely simple to install</>,
-    imageUrl: 'img/feature-install.png',
+    title: <>MVC Pattern</>,
+    imageUrl: 'img/feature-mvc.png',
     description: (
       <>
-        <p>SCI WP Framework was designed te be easy to install and use. You just need to copy the SCI WP package into your Plugin directory and use it by just typing two lines of code. The framework will read WordPress Plugin data and configure namespaces for you. </p>
-        <p>Do you want to customize something? Just add a config file in the root folder of your Plugin. Complex? Just use the SCI WP Starter Template.</p>
+        <p>The MVC Pattern allows to organize better your code bu creating a logical separation among models, controllers and views, including the bussiness logic withing services.</p><p>SCI WP extends WordPress including most of the functionalities and tools you can find in modern PHP frameworks, like <strong>Autoloading</strong> and <strong>Dependency Injection</strong>.</p>
+      </>
+    ),
+  },
+  {
+    title: <>Improved Router</>,
+    imageUrl: 'img/feature-router.png',
+    description: (
+      <>
+        <p>Create routes in the same way you do it with Laravel. SCI WP Framework includes a brand new HTTP router which allows you to directly link a closure function, a class method, a view or a file.</p>
+        <p>The bundled API router also provides an easier way of creating API routes for WordPress.</p>
       </>
     ),
   },
@@ -45,64 +54,30 @@ const features = [
     description: (
       <>
         <p>SCI WP integrates an easy to use ORM. You can map database tables to models by just creating a class. You can then customize table tames, default attributes, timestamps and more.</p>
-        <p>You can then create database queries against the models in order to get one or many records which will be mapped to create model instances with the retrieved attributes.</p>
+        <p>You can then create database queries against the models in order to get one or many records which will be mapped to create model instances with the retrieved attributes. The included Query Builder allows to create queries from the database and also from any model.</p>
       </>
     ),
   },
   {
-    title: <>Modern Framework Tools</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Service Providers</>,
+    imageUrl: '/img/feature-providers.png',
     description: (
       <>
-        SCI WP extends WordPress including most of the functionalities and tools you can find in modern PHP frameworks, an autoloading, routing and common patterns like MVC or Dependency Injection.
+       <p>Service providers allow to configure the plugin and to execute sets of tasks when the framework is loaded.</p>
+       <p>This is where you should configure services, define singletons or even routes. Tt's also the best place to bind things into the service container, which is in charge of injecting dependencies.</p>
       </>
     ),
   },
   {
-    title: <>Organize your Code</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Asset Manager</>,
+    imageUrl: '/img/feature-assets.png',
     description: (
       <>
-        With SCI WP you can divide your code in modules and create a logical separation among models, controllers and views, including the bussiness logic withing services.
+       <p>In WordPress you need to create several functions to add s simple CSS or JS file intro the webstie header.</p>
+       <p>SCI WP Framework you can just register scripts and styles with one line of code, or define them in the config file of each plugin using the framework.</p>
       </>
     ),
-  },
-  {
-    title: <>Extending your Plugins</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        When you bundle your plugin with SCI WP, you are also providing a great way of allowing another WordPress developers to extend your plugin and create a community around it.
-      </>
-    ),
-  },
-  {
-    title: <>Great Performance</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        The autoloader includes only the class files used in each request to save memory. Files, routes and configurations are cached for faster loading times. Enable or disable the extensions you want to use.
-      </>
-    ),
-  },
-  {
-    title: <>Query builder and ORM</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Instead for providing a different way of doing things that WordPress already does, SCI WP only extends WordPress functionalities so you can continue to use the WordPress standards you are used to.
-      </>
-    ),
-  },
-  {
-    title: <>Use WordPress Standards</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Instead for providing a different way of doing things that WordPress already does, SCI WP only extends WordPress functionalities so you can continue to use the WordPress standards you are used to.
-      </>
-    ),
-  },
+  }
 ];
 
 function FeatureContent({ title, description }) {
@@ -196,6 +171,34 @@ function Home() {
         </div>
       </header>
       <main className="page">
+
+      <section id="bundle">
+          <div className="container">
+            <div className="row">
+              <div className="col col--12 content-center">
+                <h2>Simple to install and update</h2>
+                <div className="h2sub">
+                  You just need to copy the plugin into your plugin's directory. Use the included GitHub auto updater to get new versions.
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className={classnames('col col--12', styles.bundle)}>
+                <div className={classnames(styles.bundleMedia)}>
+                  <div className="text--center">
+                    <img className={styles.bundleImage} src={'img/feature-install.png'} alt="Bundle easily with your plugin" />
+                  </div>
+                </div>
+                <div className={classnames(styles.bundleContent)}>
+                  <p>After installing the framework you can start using it by just typing two lines of code. To customize it just add a config file in the root folder of your Plugin. Complex? Just use the SCI WP Starter Template.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr/>
+
+
         {features && features.length && (
           <section className={styles.features}>
             <div className="container">
@@ -217,9 +220,28 @@ function Home() {
           </section>
         )}
 
+  
+  {
+/*
+      The autoloader includes only the class files used in each request to save memory. Files, routes and configurations are cached for faster loading times. Enable or disable the extensions you want to use.
 
-{/*
-        <section className="mvc">
+
+  */}
+
+        <section className="section-white" style={{background: "#2A4447"}}>
+          <div className="container">
+            <div className="row">
+              <div className="col col--12 content-center">
+                <h2>Use WordPress Standards</h2>
+                <img src={'img/wplove.png'} alt={'SCI WP Love WordPress'} />
+                <div className="h2sub margin-top-25">
+                  <p>Instead for providing a different way of doing things which WordPress already does, SCI WP extends WordPress functionalities so you can continue to use the WordPress standards you are used to.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="bundle">
           <div className="container">
             <div className="row">
               <div className="col col--12 content-center">
@@ -230,24 +252,26 @@ function Home() {
               </div>
             </div>
             <div className="row">
-              <div className="col col--6">
-                <h2></h2>
-              </div>
-              <div className="col col--6">
-                <h2></h2>
+              <div className={classnames('col col--12', styles.bundle)}>
+                <div className={classnames(styles.bundleMedia)}>
+                  <div className="text--center">
+                    <img className={styles.bundleImage} src={'img/feature-bundle.png'} alt="Bundle easily with your plugin" />
+                  </div>
+                </div>
+                <div className={classnames(styles.bundleContent)}>
+                  <p>You can include the framework with your plugin by just using three lines of code. Namespace in the framework code will be replaced for you when you enable your plugin. It's also possible for any plugin which may extend yours to use the framework.</p>
+                </div>
               </div>
             </div>
           </div>
         </section>
-
-*/}
         <hr/>
         {people && people.length && (
           <section className={styles.people}>
             <div className="container">
             <div className="row">
               <div className="col col--12 content-center">
-                <h2>Who built SCi WP</h2>
+                <h2>Who built SCI WP</h2>
                 <div className="h2sub">
                 For problems please contact the guy on the right
                 </div>
