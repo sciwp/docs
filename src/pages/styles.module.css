@@ -26,12 +26,17 @@
 .feature {
   margin-bottom:60px;
   margin-top:60px;
+  color: #3c4858;
+}
+
+
+html[data-theme="dark"] .feature {
+  color: #fff;
 }
 
 .featureContent {
   width: 40%;
   float:left;
-  color: #3c4858;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -88,13 +93,16 @@
 .peopleContent {
   width: 90%;
   float:left;
-  color: #3c4858;
   font-family: 'Sriracha', cursive;
   font-size: 22px;
   font-weight: 500;
   line-height: 1.5;
   margin-left:5%;
   margin-right:5%;
+}
+
+html[data-theme="dark"] .feature {
+  color: #fff;
 }
 
 .peopleContent .author {
@@ -128,6 +136,10 @@
   font-weight: 500;
   line-height: 1.5;
   margin-top:30px;
+}
+
+html[data-theme="dark"] .bundleContent {
+  color: #fff;
 }
 
 .bundleMedia {
