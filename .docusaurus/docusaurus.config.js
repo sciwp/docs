@@ -44,11 +44,15 @@ export default {
       "style": "dark",
       "links": [
         {
-          "title": "Docs",
+          "title": "Documentation",
           "items": [
             {
               "label": "Framework",
-              "to": "docs/framework/prologue"
+              "to": "/docs/prologue"
+            },
+            {
+              "label": "Tutorials",
+              "to": "/tutorials"
             }
           ]
         },
@@ -62,7 +66,7 @@ export default {
           ]
         },
         {
-          "title": "Social",
+          "title": "Code",
           "items": [
             {
               "label": "GitHub",

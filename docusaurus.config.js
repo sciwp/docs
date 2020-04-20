@@ -35,15 +35,15 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Documentation',
           items: [
-            /*{
-              label: 'Style Guide',
-              to: 'docs/doc1',
-            },*/
             {
               label: 'Framework',
-              to: 'docs/framework/prologue',
+              to: '/docs/prologue',
+            },
+            {
+              label: 'Tutorials',
+              to: '/tutorials',
             },
           ],
         },
@@ -61,20 +61,12 @@ module.exports = {
           ],
         },
         {
-          title: 'Social',
+          title: 'Code',
           items: [
-            /*{
-              label: 'Blog',
-              to: 'blog',
-            },*/
             {
               label: 'GitHub',
               href: 'https://github.com/sciwp',
             },
-            /*{
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },*/
           ],
         },
       ],
