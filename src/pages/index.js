@@ -64,7 +64,7 @@ const features = [
     description: (
       <>
        <p>Service providers allow to configure the plugin and to execute sets of tasks when the framework is loaded.</p>
-       <p>This is where you should configure services, define singletons or even routes. Tt's also the best place to bind things into the service container, which is in charge of injecting dependencies.</p>
+       <p>This is where you should configure services, define singletons or even routes. It's also the best place to bind things into the service container, which is in charge of injecting dependencies.</p>
       </>
     ),
   },
