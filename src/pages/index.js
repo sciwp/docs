@@ -34,7 +34,7 @@ const features = [
     imageUrl: 'img/feature-mvc.png',
     description: (
       <>
-        <p>The MVC Pattern allows to organize better your code bu creating a logical separation among models, controllers and views, including the bussiness logic withing services.</p><p>SCI WP extends WordPress including most of the functionalities and tools you can find in modern PHP frameworks, like <strong>Autoloading</strong> and <strong>Dependency Injection</strong>.</p>
+        <p>The MVC Pattern allows you to organize better your code by creating a logical separation among models, controllers and views, including the bussiness logic withing services.</p><p>SCI WP extends WordPress including most of the functionalities and tools you can find in modern PHP frameworks, like <strong>Autoloading</strong> and <strong>Dependency Injection</strong>.</p>
       </>
     ),
   },
@@ -64,7 +64,7 @@ const features = [
     description: (
       <>
        <p>Service providers allow to configure the plugin and to execute sets of tasks when the framework is loaded.</p>
-       <p>This is where you should configure services, define singletons or even routes. Tt's also the best place to bind things into the service container, which is in charge of injecting dependencies.</p>
+       <p>This is where you should configure services, define singletons or even routes. It's also the best place to bind things into the service container, which is in charge of injecting dependencies.</p>
       </>
     ),
   },
@@ -73,7 +73,7 @@ const features = [
     imageUrl: '/img/feature-assets.png',
     description: (
       <>
-       <p>In WordPress you need to create several functions to add s simple CSS or JS file intro the webstie header.</p>
+       <p>In WordPress you need to create several functions to add a simple CSS or JS file into the website header.</p>
        <p>SCI WP Framework you can just register scripts and styles with one line of code, or define them in the config file of each plugin using the framework.</p>
       </>
     ),
@@ -206,7 +206,7 @@ function Home() {
                   <div className="col col--12 content-center">
                     <h2>A Couple of Things About SCi WP</h2>
                     <div className="h2sub">
-                        Let's see how SCI WP Framework can help you build better WordPress Plugins as you write readable and well organized code
+                        Let's see how SCI WP Framework can help you build better WordPress Plugins as you write readable and well organized code.
                     </div>
                   </div>
               </div>
