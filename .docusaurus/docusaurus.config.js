@@ -16,6 +16,12 @@ export default {
   "themes": [],
   "customFields": {},
   "themeConfig": {
+    "algolia": {
+      "apiKey": "f426a19f18676d02bac178e657381b86",
+      "indexName": "sciwp",
+      "contextualSearch": true,
+      "searchParameters": {}
+    },
     "navbar": {
       "title": "Home",
       "logo": {

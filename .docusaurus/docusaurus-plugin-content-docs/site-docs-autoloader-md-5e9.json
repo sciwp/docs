@@ -1,7 +1,7 @@
 {
   "id": "autoloader",
   "title": "Autoloader",
-  "description": "The Autoloader is responsible for including the referenced classes when they are needed. It's still common in WordPress to require all the class files at the beginning of the files. However you should not follow that practive when using this framework.",
+  "description": "The Autoloader is responsible for including the referenced classes when they are needed. It's still common in WordPress to require all the class files at the beginning of the files. However you should not follow that practive when using this framework.\r",
   "source": "@site/docs\\autoloader.md",
   "permalink": "/docs/autoloader",
   "editUrl": "https://github.com/facebook/docusaurus/edit/master/website/docs/autoloader.md",

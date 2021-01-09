@@ -7,6 +7,12 @@ module.exports = {
   organizationName: 'sciwp', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    algolia: {
+      apiKey: 'f426a19f18676d02bac178e657381b86',
+      indexName: 'sciwp',
+      contextualSearch: true,
+      searchParameters: {}
+    },
     navbar: {
       title: 'Home',
       logo: {
