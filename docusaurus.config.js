@@ -7,6 +7,7 @@ module.exports = {
   organizationName: 'sciwp', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    metadatas: [{name: 'twitter:card', content: 'summary_large_image'}],
     image: 'img/card.png',
     algolia: {
       apiKey: 'f426a19f18676d02bac178e657381b86',
