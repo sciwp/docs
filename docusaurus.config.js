@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'sciwp', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
+  image: 'img/card.png',
   themeConfig: {
     algolia: {
       apiKey: 'f426a19f18676d02bac178e657381b86',
